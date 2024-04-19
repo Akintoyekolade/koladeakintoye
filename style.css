@@ -515,6 +515,7 @@ main {
 .hero-buttons {
   display: flex;
   align-items: center;
+  border: #7c7f82 1px solid;
 }
 
 .primary-button {    
@@ -525,7 +526,7 @@ main {
   text-decoration: none;
   margin: 16px;
   transition: ease-in-out 0.2s;
-  display: inline-flex;
+  display: inline-block;
   height: 56px;
 }
 
