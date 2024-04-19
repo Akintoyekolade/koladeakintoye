@@ -1,0 +1,263 @@
+
+:root {
+    --black-100: #080808;
+    --black-40-outline: #363636;
+    --black-90-bg: #0c0c0c;
+    --black-60: #1a1a1a;
+    --black-black-30: rgba(26, 26, 26, 0.3);
+    --black-black-50: rgba(26, 26, 26, 0.4);
+    --white-100-text: #fefefe;
+    --white-90-bg: #fafafa;
+    --white-50: rgba(250, 250, 250, 0.5);
+    --white-70: rgba(250, 250, 250, 0.7);
+    --white-20: rgba(250, 250, 250, 0.2);
+    --button-black-bg-default: #080808;
+    --button-black-bg-hover: #1a1a1a;
+    --button-black-bg-loading: #363636;
+    --button-white-bg-default: #fafafa;
+    --button-white-bg-hover: rgba(241, 241, 241, 0.7);
+    --button-white-bg-loading: #e4e4e4;
+    --text-grey-idle: #7c7f82;
+  }
+
+    @font-face {
+        font-family: NotoSans;
+        src: local(NotoSans-Regular),
+          url(/path/to/NotoSans-Regular.woff2) format("woff2"),
+          url(/path/to/NotoSans-Regular.woff) format("woff"),
+          url(/path/to/NotoSans-Regular.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+      }
+      @font-face {
+        font-family: NotoSans;
+        src: local(NotoSans-SemiBold),
+          url(/path/to/NotoSans-SemiBold.woff2) format("woff2"),
+          url(/path/to/NotoSans-SemiBold.woff) format("woff"),
+          url(/path/to/NotoSans-SemiBold.ttf) format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+      }
+      @font-face {
+        font-family: NotoSans;
+        src: local(NotoSans-ExtraBold),
+          url(/path/to/NotoSans-ExtraBold.woff2) format("woff2"),
+          url(/path/to/NotoSans-ExtraBold.woff) format("woff"),
+          url(/path/to/NotoSans-ExtraBold.ttf) format("truetype");
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+      }
+      .DesktopHeadline-1 {
+        font-family: NotoSans;
+        font-size: 56px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+      }
+      .DesktopHeadline-2 {
+        font-family: NotoSans;
+        font-size: 48px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+      }
+      .MobileHeadlineH1 {
+        font-family: NotoSans;
+        font-size: 32px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+      }
+      .DesktopHeadline-3 {
+        font-family: NotoSans;
+        font-size: 32px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+      }
+      .MobileHeadlineH2 {
+        font-family: NotoSans;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: normal;
+      }
+      .DesktopHeadline-4 {
+        font-family: NotoSans;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: normal;
+      }
+      .MobileHeadlineH3 {
+        font-family: NotoSans;
+        font-size: 20px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+      }
+      .DesktopHeadline-5 {
+        font-family: NotoSans;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+      }
+      .DesktopHeadline-6 {
+        font-family: NotoSans;
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: 0.18px;
+      }
+      .Body1---Regular {
+        font-family: NotoSans;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+      }
+      .MobileHeadlineH4 {
+        font-family: NotoSans;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+      }
+      .MobileBody1 {
+        font-family: NotoSans;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+      }
+      .Body2---Regular {
+        font-family: NotoSans;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+      }
+      .MobileSubtitlePlaceholder {
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+      }
+      .MobileHeadlineH5 {
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+      }
+      .MobileBody2 {
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+      }
+      .Body3---Regular {
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.57;
+        letter-spacing: -0.03px;
+      }
+      .MobileSubtitleTitle {
+        font-family: NotoSans;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+      }
+      .MobileSubtitleDesc-1 {
+        font-family: NotoSans;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+      }
+      .MobileSubtitleDesc-2 {
+        font-family: NotoSans;
+        font-size: 10px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+      }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Preloader */
+.preloader img{
+    max-width: 300px;
+
+}
+
+body {
+    background-color: var(--black-90-bg);
+    color: var(--white-100-text);
+}
+
+#content {
+    display: none;
+    
+}
+
+
+
+
+
+/* Hide Preloader */
+.redirected .preloader {
+    display: none;
+}

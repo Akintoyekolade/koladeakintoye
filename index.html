@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kolade Akintoye's Portfolio">
+    <meta name="author" content="Kolade Akintoye">
+    <meta name="keywords" content="Brand Identity Designer, Graphics Designer, UI/UX Designer, Architectural Designer, Motion Designer">
+    <title>Kolade Akintoye - Multidisciplinary Designer</title>
+    <link rel="shortcut icon" href="assets/Fav 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Preloader-->
+    <div class="preloader">
+        <img id="preloader-img" src="assets/Logo_Dark.png" alt="Kolade Akintoye" title="Kolade Akintoye">
+        <p class="loading-text">Letting you in...</p>
+    </div>
+    <!--Preloader End-->
+
+    <div id="content">
+        <header>
+            <h1>Hello</h1>
+        </header>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script>
+        //check for user's preferred color scheme and apply it
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.getElementById('preloader-img').src = 'assets/Logo_Light.png'; // Sets the light mode preloader image
+        }
+
+        // Remove Preloader content
+        setTimeout (function() {
+            document.querySelector('.preloader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 5000);
+
+
+    </script>
+    
+</body>
+</html>
