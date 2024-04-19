@@ -1,463 +1,463 @@
 
 :root {
-    --black-100: #080808;
-    --black-70: rgba(8, 8, 8, 0.7);
-    --black-40-outline: #363636;
-    --black-90-bg: #0c0c0c;
-    --black-60: #1a1a1a;
-    --black-black-30: rgba(26, 26, 26, 0.3);
-    --black-black-50: rgba(26, 26, 26, 0.4);
-    --white-100-text: #fefefe;
-    --white-90-bg: #fafafa;
-    --white-50: rgba(250, 250, 250, 0.5);
-    --white-70: rgba(250, 250, 250, 0.7);
-    --white-20: rgba(250, 250, 250, 0.2);
-    --button-black-bg-default: #080808;
-    --button-black-bg-hover: #1a1a1a;
-    --button-black-bg-loading: #363636;
-    --button-white-bg-default: #fafafa;
-    --button-white-bg-hover: rgba(241, 241, 241, 0.7);
-    --button-white-bg-loading: #e4e4e4;
-    --text-grey-idle: #7c7f82;
-  }
+  --black-100: #080808;
+  --black-70: rgba(8, 8, 8, 0.7);
+  --black-40-outline: #363636;
+  --black-90-bg: #0c0c0c;
+  --black-60: #1a1a1a;
+  --black-black-30: rgba(26, 26, 26, 0.3);
+  --black-black-50: rgba(26, 26, 26, 0.4);
+  --white-100-text: #fefefe;
+  --white-90-bg: #fafafa;
+  --white-50: rgba(250, 250, 250, 0.5);
+  --white-70: rgba(250, 250, 250, 0.7);
+  --white-20: rgba(250, 250, 250, 0.2);
+  --button-black-bg-default: #080808;
+  --button-black-bg-hover: #1a1a1a;
+  --button-black-bg-loading: #363636;
+  --button-white-bg-default: #fafafa;
+  --button-white-bg-hover: rgba(241, 241, 241, 0.7);
+  --button-white-bg-loading: #e4e4e4;
+  --text-grey-idle: #7c7f82;
+}
 
 /* Light Mode*/
 
 
+  @font-face {
+      font-family: "noto-sans", sans-serif;
+      src: local(NotoSans-Regular),
+        url(/path/to/NotoSans-Regular.woff2) format("woff2"),
+        url(/path/to/NotoSans-Regular.woff) format("woff"),
+        url(/path/to/NotoSans-Regular.ttf) format("truetype");
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+    }
     @font-face {
-        font-family: "noto-sans", sans-serif;
-        src: local(NotoSans-Regular),
-          url(/path/to/NotoSans-Regular.woff2) format("woff2"),
-          url(/path/to/NotoSans-Regular.woff) format("woff"),
-          url(/path/to/NotoSans-Regular.ttf) format("truetype");
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: NotoSans;
-        src: local(NotoSans-SemiBold),
-          url(/path/to/NotoSans-SemiBold.woff2) format("woff2"),
-          url(/path/to/NotoSans-SemiBold.woff) format("woff"),
-          url(/path/to/NotoSans-SemiBold.ttf) format("truetype");
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: NotoSans;
-        src: local(NotoSans-ExtraBold),
-          url(/path/to/NotoSans-ExtraBold.woff2) format("woff2"),
-          url(/path/to/NotoSans-ExtraBold.woff) format("woff"),
-          url(/path/to/NotoSans-ExtraBold.ttf) format("truetype");
-        font-weight: 800;
-        font-style: normal;
-        font-stretch: normal;
-      }
-      .DesktopHeadline-1 {
-        font-family: NotoSans;
-        font-size: 56px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.14;
-        letter-spacing: normal;
-      }
-      .DesktopHeadline-2 {
-        font-family: NotoSans;
-        font-size: 48px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.08;
-        letter-spacing: normal;
-      }
-      .MobileHeadlineH1 {
-        font-family: NotoSans;
-        font-size: 32px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.13;
-        letter-spacing: normal;
-      }
-      .DesktopHeadline-3 {
-        font-family: NotoSans;
-        font-size: 32px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.13;
-        letter-spacing: normal;
-      }
-      .MobileHeadlineH2 {
-        font-family: NotoSans;
-        font-size: 24px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.17;
-        letter-spacing: normal;
-      }
-      .DesktopHeadline-4 {
-        font-family: NotoSans;
-        font-size: 24px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.17;
-        letter-spacing: normal;
-      }
-      .MobileHeadlineH3 {
-        font-family: NotoSans;
-        font-size: 20px;
-        font-weight: 800;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-      }
-      .DesktopHeadline-5 {
-        font-family: NotoSans;
-        font-size: 20px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-      }
-      .DesktopHeadline-6 {
-        font-family: NotoSans;
-        font-size: 18px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.22;
-        letter-spacing: 0.18px;
-      }
-      .Body1---Regular {
-        font-family: NotoSans;
-        font-size: 18px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.22;
-        letter-spacing: normal;
-      }
-      .MobileHeadlineH4 {
-        font-family: NotoSans;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.5;
-        letter-spacing: normal;
-      }
-      .MobileBody1 {
-        font-family: NotoSans;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.38;
-        letter-spacing: normal;
-      }
-      .Body2---Regular {
-        font-family: NotoSans;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.38;
-        letter-spacing: normal;
-      }
-      .MobileSubtitlePlaceholder {
-        font-family: NotoSans;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.71;
-        letter-spacing: normal;
-      }
-      .MobileHeadlineH5 {
-        font-family: NotoSans;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.43;
-        letter-spacing: normal;
-      }
-      .MobileBody2 {
-        font-family: NotoSans;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.43;
-        letter-spacing: normal;
-      }
-      .Body3---Regular {
-        font-family: NotoSans;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.57;
-        letter-spacing: -0.03px;
-      }
-      .MobileSubtitleTitle {
-        font-family: NotoSans;
-        font-size: 12px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: normal;
-      }
-      .MobileSubtitleDesc-1 {
-        font-family: NotoSans;
-        font-size: 12px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: normal;
-      }
-      .MobileSubtitleDesc-2 {
-        font-family: NotoSans;
-        font-size: 10px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.6;
-        letter-spacing: normal;
-      }
+      font-family: NotoSans;
+      src: local(NotoSans-SemiBold),
+        url(/path/to/NotoSans-SemiBold.woff2) format("woff2"),
+        url(/path/to/NotoSans-SemiBold.woff) format("woff"),
+        url(/path/to/NotoSans-SemiBold.ttf) format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+    }
+    @font-face {
+      font-family: NotoSans;
+      src: local(NotoSans-ExtraBold),
+        url(/path/to/NotoSans-ExtraBold.woff2) format("woff2"),
+        url(/path/to/NotoSans-ExtraBold.woff) format("woff"),
+        url(/path/to/NotoSans-ExtraBold.ttf) format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-stretch: normal;
+    }
+    .DesktopHeadline-1 {
+      font-family: NotoSans;
+      font-size: 56px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+    }
+    .DesktopHeadline-2 {
+      font-family: NotoSans;
+      font-size: 48px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.08;
+      letter-spacing: normal;
+    }
+    .MobileHeadlineH1 {
+      font-family: NotoSans;
+      font-size: 32px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      letter-spacing: normal;
+    }
+    .DesktopHeadline-3 {
+      font-family: NotoSans;
+      font-size: 32px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      letter-spacing: normal;
+    }
+    .MobileHeadlineH2 {
+      font-family: NotoSans;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.17;
+      letter-spacing: normal;
+    }
+    .DesktopHeadline-4 {
+      font-family: NotoSans;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.17;
+      letter-spacing: normal;
+    }
+    .MobileHeadlineH3 {
+      font-family: NotoSans;
+      font-size: 20px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+    }
+    .DesktopHeadline-5 {
+      font-family: NotoSans;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+    }
+    .DesktopHeadline-6 {
+      font-family: NotoSans;
+      font-size: 18px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.22;
+      letter-spacing: 0.18px;
+    }
+    .Body1---Regular {
+      font-family: NotoSans;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.22;
+      letter-spacing: normal;
+    }
+    .MobileHeadlineH4 {
+      font-family: NotoSans;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+    }
+    .MobileBody1 {
+      font-family: NotoSans;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+    }
+    .Body2---Regular {
+      font-family: NotoSans;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+    }
+    .MobileSubtitlePlaceholder {
+      font-family: NotoSans;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+    }
+    .MobileHeadlineH5 {
+      font-family: NotoSans;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+    }
+    .MobileBody2 {
+      font-family: NotoSans;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+    }
+    .Body3---Regular {
+      font-family: NotoSans;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.57;
+      letter-spacing: -0.03px;
+    }
+    .MobileSubtitleTitle {
+      font-family: NotoSans;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+    }
+    .MobileSubtitleDesc-1 {
+      font-family: NotoSans;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+    }
+    .MobileSubtitleDesc-2 {
+      font-family: NotoSans;
+      font-size: 10px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+    }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Preloader */
 /* Center the preloader div */
 .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    animation: fadeOut 5s forwards;
-    justify-items: center;
-    place-items: center;
-  }
-  
-  /* Style for the centered content */
-  .centered-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeOut 5s forwards;
+  justify-items: center;
+  place-items: center;
+}
 
-  /* Style for the loading text at the bottom */
-  .loading-text {
-    margin-bottom: 40px;
-    font-size: 14px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    color: var(--white-100-text);
-    text-align: center;
-    letter-spacing: 5px;
-  }
+/* Style for the centered content */
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+
+/* Style for the loading text at the bottom */
+.loading-text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  color: var(--white-100-text);
+  text-align: center;
+  letter-spacing: 5px;
+}
 
 
 .preloader img{
-    max-width: 260px;
+  max-width: 260px;
 
 }
 
 /* Keyframe animation for fading out */
 @keyframes fadeOut {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
-  }
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
 
 
 body{
-    background-color: var(--black-90-bg);
-    color: var(--white-100-text);
-    transition: background-color 0.5s, color 0.5s;
-    font-family: "noto-sans", sans-serif;
-    min-height: 100vh;
+  background-color: var(--black-90-bg);
+  color: var(--white-100-text);
+  transition: background-color 0.5s, color 0.5s;
+  font-family: "noto-sans", sans-serif;
+  min-height: 100vh;
 }
 
 body.light-mode {
-    background-color: var(--white-90-bg);
-    color: var(--black-100);
+  background-color: var(--white-90-bg);
+  color: var(--black-100);
 }
 
 #content {
-    display: none;    
+  display: none;    
 }
 
 /* Main Header */
 
 .mainHeader {
-    padding: 44px 56px;
-    background-color: var(--black-70);
-    backdrop-filter: blur(10px);
+  padding: 44px 56px;
+  background-color: var(--black-70);
+  backdrop-filter: blur(10px);
 }
 
 .main-nav .logo img {
-    max-height: 40px;
+  max-height: 40px;
 }
 
 .logo-image {
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
 }
 
 .logo--menu {
-    display: flex;
-    align-items: center;
-    place-content: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  justify-content: space-between;
 }
 
 .menu-item {
-    padding-left: 32px;
+  padding-left: 32px;
 }
 
 ul {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    place-items: center;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  place-items: center;
 }
 
 #languagedropdown {
-    background-color: transparent;
-    color: var(--white-100-text);
-    border: none;
-    outline: none;
-    font-size: 20px;
+  background-color: transparent;
+  color: var(--white-100-text);
+  border: none;
+  outline: none;
+  font-size: 20px;
 }
 
 .header-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
+
 
 /* Sidebar Nav */
 
 .aside-nav {
-    overflow: hidden;
-    background-color: var(--black-90-bg);
-    width: 337px;
-    padding-left: 105px;
-    padding-top: 113px;
-    position: fixed;
-    background-color: var(--black-100);
-    border: var(--text-grey-idle) 2px solid;
+  overflow: hidden;
+  width: 337px;
+  padding-left: 105px;
+  padding-top: 113px;
+  background-color: var(--black-10);
+  border: var(--text-grey-idle) 2px solid;
 
 }
 
 .aside-nav-menu {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
 }
 
 .aside-nav-menu ul {
-    display: block;
+  display: block;
 }
 
 .aside-nav-menu ul li {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .aside-nav-menu ul li:nth-child(5) {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 
 .aside-nav a {
-    color: var(--text-grey-idle);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    display: inline-flex;    
+  color: var(--text-grey-idle);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;    
 }
 
 .nav--icon img {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .layout-container {
-    display: flex;
+  display: flex;
+  border: var(--text-grey-idle) 2px solid;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 ul .active .circle {
-    background-color: #e4e4e4;
-    width: 4px;
-    height: 4px;
-    border-radius: 99px;
-    position: relative;
-    margin-right: 8px;    
+  background-color: #e4e4e4;
+  width: 4px;
+  height: 4px;
+  border-radius: 99px;
+  position: relative;
+  margin-right: 8px;    
 }
 
 ul .active {
-    display: inline-flex;
-    align-items: center;
-    color: var(--white-100-text);
-    overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  color: var(--white-100-text);
+  overflow: hidden;
 
 }
 
 ul .active .active-rectangle {
-    width: 100%;
-    height: 1px;
-    background-color: #e4e4e4;
-    position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+  position: relative;
 }
 
 .social-icons {
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+
 }
 
 .nav-clock {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--white-70);
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--white-70);
 }
 
 
-
-
 main {
-    flex: 1;
-    padding: 32px;
+  flex: 1;
+  padding: 32px;
 }
 
 
@@ -467,5 +467,5 @@ main {
 
 /* Hide Preloader */
 .redirected .preloader {
-    display: none;
+  display: none;
 }
