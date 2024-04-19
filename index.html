@@ -13,10 +13,12 @@
 
 <body>
     <!--Preloader-->
-    <div class="preloader">
-        <img id="preloader-img" src="assets/Logo_Dark.png" alt="Kolade Akintoye" title="Kolade Akintoye">
-        <p class="loading-text">Letting you in...</p>
-    </div>
+        <div class="preloader">
+            <div class="centered-content">
+                <img id="preloader-img" src="assets/Logo_Dark.png" alt="Kolade Akintoye" title="Kolade Akintoye">
+            </div>
+                <p class="loading-text">Letting you in...</p>
+        </div>
     <!--Preloader End-->
 
     <div id="content">
@@ -47,7 +49,7 @@
         setTimeout (function() {
             document.querySelector('.preloader').style.display = 'none';
             document.getElementById('content').style.display = 'block';
-        }, 5000);
+        }, 7000);
 
 
     </script>
