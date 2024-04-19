@@ -383,6 +383,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  position: fixed;
 }
 
 .aside-nav-menu ul {
