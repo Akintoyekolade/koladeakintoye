@@ -1,6 +1,7 @@
 
 :root {
     --black-100: #080808;
+    --black-70: rgba(8, 8, 8, 0.7);
     --black-40-outline: #363636;
     --black-90-bg: #0c0c0c;
     --black-60: #1a1a1a;
@@ -24,7 +25,7 @@
 
 
     @font-face {
-        font-family: NotoSans;
+        font-family: "noto-sans", sans-serif;
         src: local(NotoSans-Regular),
           url(/path/to/NotoSans-Regular.woff2) format("woff2"),
           url(/path/to/NotoSans-Regular.woff) format("woff"),
@@ -271,13 +272,14 @@
   /* Style for the loading text at the bottom */
   .loading-text {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
     color: var(--white-100-text);
     text-align: center;
+    letter-spacing: 5px;
   }
 
 
@@ -300,6 +302,10 @@ body{
     background-color: var(--black-90-bg);
     color: var(--white-100-text);
     transition: background-color 0.5s, color 0.5s;
+    font-family: "noto-sans", sans-serif;
+    background-image: url('assets/kolade-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 body.light-mode {
@@ -307,11 +313,61 @@ body.light-mode {
     color: var(--black-100);
 }
 
-
 #content {
-    display: none;
-    
+    display: none;    
 }
+
+/* Main Header */
+
+.mainHeader {
+    padding: 44px 56px;
+    background-color: var(--black-70);
+    backdrop-filter: blur(10px);
+}
+
+.main-nav .logo img {
+    max-height: 40px;
+}
+
+.logo-image {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.logo--menu {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    justify-content: space-between;
+}
+
+.menu-item {
+    padding-left: 32px;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    place-items: center;
+}
+
+#languagedropdown {
+    background-color: transparent;
+    color: var(--white-100-text);
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 
 
