@@ -303,9 +303,7 @@ body{
     color: var(--white-100-text);
     transition: background-color 0.5s, color 0.5s;
     font-family: "noto-sans", sans-serif;
-    background-image: url('assets/kolade-1.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 100vh;
 }
 
 body.light-mode {
@@ -367,6 +365,100 @@ ul {
     cursor: pointer;
 }
 
+/* Sidebar Nav */
+
+.aside-nav {
+    overflow: hidden;
+    background-color: var(--black-90-bg);
+    width: 337px;
+    padding-left: 105px;
+    padding-top: 113px;
+    position: fixed;
+    background-color: var(--black-100);
+    border: var(--text-grey-idle) 2px solid;
+
+}
+
+.aside-nav-menu {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.aside-nav-menu ul {
+    display: block;
+}
+
+.aside-nav-menu ul li {
+    padding-bottom: 32px;
+}
+
+.aside-nav-menu ul li:nth-child(5) {
+    padding-bottom: 0;
+}
+
+
+.aside-nav a {
+    color: var(--text-grey-idle);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;    
+}
+
+.nav--icon img {
+    margin-left: 8px;
+}
+
+.layout-container {
+    display: flex;
+}
+
+ul .active .circle {
+    background-color: #e4e4e4;
+    width: 4px;
+    height: 4px;
+    border-radius: 99px;
+    position: relative;
+    margin-right: 8px;    
+}
+
+ul .active {
+    display: inline-flex;
+    align-items: center;
+    color: var(--white-100-text);
+    overflow: hidden;
+
+}
+
+ul .active .active-rectangle {
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+    position: relative;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-clock {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white-70);
+}
+
+
+
+
+main {
+    flex: 1;
+    padding: 32px;
+}
 
 
 
