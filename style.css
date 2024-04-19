@@ -464,7 +464,20 @@ main {
 }
 
 .hero-section {
-  padding-top: 264px;
+  padding-top: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 56px;
+  padding-right: 56px;
+  border: #7c7f82 1px solid;
+  width: 100%;
+
+}
+
+.hero-image img{
+  max-width: 520px;
+  padding-left: 100px;
 }
 
 .multi-designer {
@@ -497,6 +510,45 @@ main {
   flex-grow: 0;
   line-height: 178%;
   padding-top: 24px;  
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.primary-button {    
+  padding: 16px 24px;
+  background-color: var(--button-white-bg-default);
+  color: var(--button-black-bg-default);
+  border-radius: 99px;
+  text-decoration: none;
+  margin: 16px;
+  transition: ease-in-out 0.2s;
+  display: inline-flex;
+  height: 56px;
+}
+
+.primary-button:hover {
+  background-color: var(--button-white-bg-hover);
+}
+
+
+.secondary-button {    
+  padding: 16px 24px;
+  background-color: none;
+  border: 2px solid var(--button-white-bg-default);
+  color: var(--secondary-color);
+  border-radius: 99px;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  display: inline-flex;
+  height: 56px;
+}
+
+
+.secondary-button:hover {
+  background-color: var(--button-black-bg-hover);
 }
 
 
