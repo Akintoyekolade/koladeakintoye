@@ -118,7 +118,7 @@
       letter-spacing: normal;
     }
     .DesktopHeadline-5 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 20px;
       font-weight: normal;
       font-stretch: normal;
@@ -137,7 +137,7 @@
     }
     .Body1---Regular {
       font-family: "noto-sans", sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -164,7 +164,7 @@
     }
     .Body2---Regular {
       font-family: NotoSans;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -303,7 +303,6 @@ body{
   color: var(--white-100-text);
   transition: background-color 0.5s, color 0.5s;
   font-family: "noto-sans", sans-serif;
-  min-height: 100vh;
 }
 
 body.light-mode {
@@ -317,13 +316,20 @@ body.light-mode {
 
 /* Main Header */
 
-.main-nav {
+.mainHeader {
   padding: 44px 56px;
+  height: 127px;
   background-color: var(--black-70);
   backdrop-filter: blur(10px);
   width: 100vw;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
+  top: 0;
+
+}
+
+.container {
+  padding-top: 127px;
 }
 
 .logo--menu {
@@ -372,20 +378,21 @@ ul {
 
 /* Sidebar Nav */
 
-.aside-nav {
-  overflow: hidden;
+aside.aside-nav {
   width: 337px;
   padding-left: 105px;
-  padding-top: 113px;
   background-color: var(--black-100);
+  overflow-y: auto;
+  z-index: 90;
+  position: fixed;
 }
 
 .aside-nav-menu {
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
-  position: fixed;
+  padding-bottom: 48px;
+  height: 100vh;
 }
 
 .aside-nav-menu ul {
@@ -451,17 +458,15 @@ ul .active .active-rectangle {
 }
 
 
-.layout-container {
-  padding-top: 113px;
+.layout-container {  
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
 
 }
 
 main {
   flex: 1;
-  padding: 32px;
+  margin-left: 337px;
 }
 
 .hero-section {
