@@ -556,7 +556,7 @@ main {
 
 .hero-image svg{
   max-width: 520px;
-  padding-left: 100px;
+  padding-left: 64px;
   min-width: 200px;
 }
 
@@ -659,7 +659,7 @@ main {
   }
 
   body {
-    margin: 0 16px;
+    margin: 0 32px;
   }
 
   main {
@@ -752,7 +752,7 @@ main {
 
   .hero-image svg {
     min-width: 100px;
-    max-width: 400px;
+    max-width: 250px;
     place-self: center;
     margin-top: 16px;
     padding-left: 0;
