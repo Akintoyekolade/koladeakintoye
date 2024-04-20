@@ -682,6 +682,7 @@ main {
     justify-content: center;
     place-items: center;
     max-width: 100vw;
+
   }
 
   
@@ -691,23 +692,20 @@ main {
     place-content: center;
     justify-content: space-between;
     border: #e4e4e4 1px solid;
-    width: 100%;
-    
+    width: 100%;    
   }
 
   .main-nav .logo img {
     max-height: 24px;
   }
 
-  .logo-image {
-    left: 0;
-    transform: translateX(0);
-    position: relative;
-  }
-
 
   .hero-buttons {
     width: 100%;
+  }
+
+  .hero-image svg {
+    width: 240px;
   }
 
 }
