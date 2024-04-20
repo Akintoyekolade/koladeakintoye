@@ -637,6 +637,9 @@ main {
 }
 
 
+/*----------------------------------------------------*/
+
+/* Mobile Hero Section */
 @media (max-width: 992px) {
 
 
@@ -665,16 +668,6 @@ main {
     padding-top: 8px;
   }
 
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    border: #e4e4e4 1px solid;
-    padding: 0;
-    width: 100%;  
-  }
-
-
-  
   .logo--menu {
     display: flex;
     justify-content: space-between;
@@ -698,18 +691,46 @@ main {
     position: relative;
   }
 
-  .hero-text {
-    border: #e4e4e4 1px solid;
-  }
-  
-
-
-
-
-  .hero-buttons {
+  .hero-section {
     display: flex;
     flex-direction: column;
-    border: #e4e4e4 1px solid;
+    padding: 0;
+    width: 100%;  
+  }
+
+  .multi-designer svg {
+    height: 16px;
+    padding-right: 0;
+  }
+
+  .multi-designer .star-icon {
+    padding-right: 2px;
+  }
+
+
+  
+  .hero-text h1{
+    font-size: 32px;
+  }
+
+  .hero-text h4 {
+    font-size: 16px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+  }
+
+  .hero-buttons .button {
+    height: 36px;
+    font-size: 12px;
+    padding: 10px 54px;
+
+  }
+
+  .hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
   }
 
@@ -720,13 +741,26 @@ main {
     flex-grow: unset;
   }
 
+  .hero-buttons .secondary-button {
+    border-width: 0.5px;
+  }
+
+  .hero-buttons .secondary-button svg {
+    height: 16px;
+  }
+
   .hero-image svg {
-    width: 100%;
+    min-width: 100px;
+    max-width: 400px;
+    place-self: center;
+    margin-top: 16px;
+    padding-left: 0;
+
   }
 
 }
 
-
+/*----------------------------------------------------*/
 
 
 
