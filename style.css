@@ -590,7 +590,6 @@ main {
   flex-grow: 0;
   line-height: 178%;
   padding-top: 8px; 
-  padding-bottom: 40px; 
 }
 
 .hero-buttons {
@@ -599,6 +598,7 @@ main {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 16px;
+  padding-top: 40px;
 }
 
 .primary-button {    
@@ -640,7 +640,7 @@ main {
 /*----------------------------------------------------*/
 
 /* Mobile Hero Section */
-@media (max-width: 992px) {
+@media (max-width: 1150px) {
 
 
   .logo--menu ul {
@@ -679,6 +679,7 @@ main {
     backdrop-filter: blur(10px);
     position: fixed;
     z-index: 100;
+    margin:  16px 16px;
   }
 
   .main-nav .logo img {
@@ -706,8 +707,6 @@ main {
   .multi-designer .star-icon {
     padding-right: 2px;
   }
-
-
   
   .hero-text h1{
     font-size: 32px;
@@ -731,7 +730,8 @@ main {
   .hero-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    margin-top: 8px;
+    padding-top: 8px; 
   }
 
   .hero-buttons .button {
@@ -739,6 +739,7 @@ main {
     display: flex;
     justify-content: center;
     flex-grow: unset;
+    padding: 10px 12px;
   }
 
   .hero-buttons .secondary-button {
