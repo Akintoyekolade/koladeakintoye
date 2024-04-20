@@ -751,12 +751,13 @@ main {
   }
 
   .hero-image svg {
-    min-width: 100px;
     max-width: 250px;
+    height: 300px;
     place-self: center;
-    margin-top: 16px;
+    margin-top: 4px;
     padding-left: 0;
-
+    margin-top: 24px;
+    
   }
 
 }
