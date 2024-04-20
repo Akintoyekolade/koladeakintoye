@@ -654,8 +654,6 @@ main {
 
   body {
     width: 100%;
-    margin-left: 16px;
-    margin-right: 16px;
   }
 
   main {
@@ -670,7 +668,11 @@ main {
   }
 
 
-
+  .mainHeader {
+    padding-left: 16px;
+    margin-top: 24px;
+    border: #e4e4e4 1px solid;
+  }
 
   
 .logo--menu {
@@ -688,6 +690,11 @@ main {
   left: 0;
   transform: translateX(0);
   position: relative;
+}
+
+
+.hero-buttons {
+  width: 100%;
 }
 
 }
