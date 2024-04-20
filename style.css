@@ -654,6 +654,7 @@ main {
 
   body {
     width: 100%;
+    margin: 16px;
   }
 
   main {
@@ -667,35 +668,47 @@ main {
     flex-direction: column;
   }
 
-
   .mainHeader {
-    padding-left: 16px;
-    margin-top: 24px;
     border: #e4e4e4 1px solid;
+    display: flex;
+    border-radius: 99px;
+    margin-top: 24px;
+    background-color: var(--black-70);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    height: 46px;
+    justify-content: center;
+    place-items: center;
+    max-width: 100vw;
   }
 
   
-.logo--menu {
-  display: flex;
-  align-items: center;
-  place-content: center;
-  justify-content: space-between;
-}
+  .logo--menu {
+    display: inline-flex;
+    align-items: center;
+    place-content: center;
+    justify-content: space-between;
+    border: #e4e4e4 1px solid;
+    width: 100%;
+    
+  }
 
-.main-nav .logo img {
-  max-height: 24px;
-}
+  .main-nav .logo img {
+    max-height: 24px;
+  }
 
-.logo-image {
-  left: 0;
-  transform: translateX(0);
-  position: relative;
-}
+  .logo-image {
+    left: 0;
+    transform: translateX(0);
+    position: relative;
+  }
 
 
-.hero-buttons {
-  width: 100%;
-}
+  .hero-buttons {
+    width: 100%;
+  }
 
 }
 
