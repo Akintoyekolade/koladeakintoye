@@ -653,8 +653,8 @@ main {
   }
 
   body {
-    width: 100%;
-    margin: 16px;
+    width: 100vw;
+    margin: 64px;
   }
 
   main {
