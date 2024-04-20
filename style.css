@@ -701,11 +701,19 @@ main {
 
 
   .hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .hero-buttons .button {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-image svg {
-    width: 240px;
+    width: 100%;
   }
 
 }
