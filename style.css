@@ -542,18 +542,17 @@ main {
 /* Hero Section */
 
 .hero-section {
-  padding-top: 80px;
+  padding-top: 32px;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 56px;
   padding-right: 56px;
-  border: #7c7f82 1px solid;
   width: 100%;
 
 }
 
-.hero-image img{
+.hero-image svg{
   max-width: 520px;
   padding-left: 100px;
   min-width: 200px;
@@ -595,7 +594,6 @@ main {
 .hero-buttons {
   display: flex;
   align-items: center;
-  border: #7c7f82 1px solid;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 16px;
