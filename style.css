@@ -701,8 +701,8 @@ main {
 
 
   .hero-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 
   }
 
@@ -710,6 +710,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-grow: unset;
   }
 
   .hero-image svg {
