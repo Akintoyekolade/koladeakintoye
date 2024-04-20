@@ -316,18 +316,6 @@ body.light-mode {
 
 /* Main Header */
 
-.mainHeader {
-  padding: 44px 56px;
-  height: 127px;
-  background-color: var(--black-70);
-  backdrop-filter: blur(10px);
-  width: 100vw;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-
-}
-
 .container {
   padding-top: 127px;
 }
@@ -337,6 +325,14 @@ body.light-mode {
   align-items: center;
   place-content: center;
   justify-content: space-between;
+  padding: 44px 56px;
+  background-color: var(--black-70);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+
 }
 
 .main-nav .logo img {
@@ -375,7 +371,7 @@ ul {
   cursor: pointer;
 }
 
-.mobile-menu-button {
+.mobile-menu {
   display: none;
 }
 
@@ -640,12 +636,17 @@ main {
 
 
 @media (max-width: 992px) {
+
+
   .logo--menu ul {
     display: none;
   }
 
-  .mobile-menu-button {
+  .mobile-menu {
     display: block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .aside-nav {
@@ -654,11 +655,11 @@ main {
 
   body {
     width: 100vw;
-    margin: 64px;
+    margin: 16px;
   }
 
   main {
-    margin: 0;
+    margin: 0 20px;
     display: grid;
     padding-top: 32px;
   }
@@ -666,43 +667,50 @@ main {
   .hero-section {
     display: flex;
     flex-direction: column;
+    border: #e4e4e4 1px solid;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;  
   }
 
-  .mainHeader {
-    border: #e4e4e4 1px solid;
+
+  
+  .logo--menu {
     display: flex;
-    border-radius: 99px;
+    justify-content: space-between;
+    border: #e4e4e4 1px solid;
+    border-radius: 99px;  
+    padding: 8px 24px;
     margin-top: 24px;
     background-color: var(--black-70);
     backdrop-filter: blur(10px);
     position: fixed;
     z-index: 100;
-    top: 0;
-    height: 46px;
-    justify-content: center;
-    place-items: center;
-    max-width: 100vw;
-
-  }
-
-  
-  .logo--menu {
-    display: inline-flex;
-    align-items: center;
-    place-content: center;
-    justify-content: space-between;
-    border: #e4e4e4 1px solid;
-    width: 100%;    
   }
 
   .main-nav .logo img {
     max-height: 24px;
   }
 
+  .logo-image {
+    left: 0;
+    transform: translateX(0);
+    position: relative;
+  }
+
+  .hero-text {
+    border: #e4e4e4 1px solid;
+  }
+  
+
+
+
 
   .hero-buttons {
     display: flex;
     flex-direction: column;
+    border: #e4e4e4 1px solid;
 
   }
 
