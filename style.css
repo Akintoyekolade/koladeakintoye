@@ -998,7 +998,7 @@ main {
   /*--border: var(--black-40-outline) 1px solid;--*/
   overflow: hidden;
   border-radius: 16px;
-  opacity: 100%; /* Reduce to 50% LATER -----------*/
+  opacity: 50%; /* Reduce to 50% LATER -----------*/
   transition: ease-in-out 0.3s;
   background-color: var(--background-color);
 }
@@ -1109,6 +1109,7 @@ main {
     overflow: hidden;
     padding: 16px;
     background-color: var(--black-black-30);
+    opacity: 100%;
   }
 
   .texts--button {
