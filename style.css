@@ -1078,18 +1078,6 @@ main {
   gap: 24px;
 }
 
-/* @media (max-width: 992px) and (min-width: 100px) { 
-    @media (max-width: 1024px) and (min-width: 500px)
-
-    
-@media (max-width: 1024px) and (min-width: 500px) {
-    .project-thumbnail {
-      height: 500px;
-      min-height: 300px;
-    }
-
-  }
-  */
 
 /* Media queries separated by their respective styles */
 @media (max-width: 1024px) {
@@ -1124,12 +1112,12 @@ main {
   }
 
   .texts--button {
-    padding: 24px 0;
+    padding: 24px 0 8px 0;
     top: 0;
     bottom: 0;
     display: inline-block;
     position: relative;
-    flex-direction: column;
+    flex-direction: column;   
   }
 
   .project-thumbnail { 
@@ -1144,9 +1132,23 @@ main {
     border: var(--button-black-bg-loading) 1px solid;
     padding: 4px 8px;
   }
+
+  .card-texts {   
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .card-texts .MobileSubtitleTitle {
+    color: var(--white-50);
+    font-weight: 400;
+  }
+
+
 }
 
-@media (max-width: 500px) {
+
+
+@media (max-width: 550px) {
   .cards-container {
     grid-template-columns: auto ;
   }
