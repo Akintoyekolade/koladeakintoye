@@ -19,6 +19,7 @@
   --button-white-bg-hover: rgba(241, 241, 241, 0.7);
   --button-white-bg-loading: #e4e4e4;
   --text-grey-idle: #7c7f82;
+  --background-color: #0c0c0c;
 }
 
 /* Light Mode*/
@@ -299,7 +300,7 @@
 
 
 body{
-  background-color: var(--black-90-bg);
+  background-color: var(--background-color);
   color: var(--white-100-text);
   transition: background-color 0.5s, color 0.5s;
   font-family: "noto-sans", sans-serif;
@@ -307,10 +308,35 @@ body{
   overflow-x: hidden;
 }
 
-body.light-mode {
-  background-color: var(--white-90-bg);
+
+/*----------------------------------------------------*/
+/* --- LIGHT THEME ---*/
+
+
+body[data-theme='light'] {
+  --background-color: #fafafa;
   color: var(--black-100);
+
+  .aside-nav-menu {
+    background-color: var(--button-white-bg-hover);
+    color: var(--black-100);
+  }
+
+  .logo--menu {
+    background-color: var(--white-50);
+    box-shadow: rgba(0, 0, 0, 0.097) 2px 2px 32px;
+  }
+
+
+
+  
+
+  
 }
+
+
+/* --- LIGHT THEME ^---*/
+/*----------------------------------------------------*/
 
 #content {
   display: none;    
@@ -373,7 +399,7 @@ ul {
   cursor: pointer;
 }
 
-.mobile-menu {
+.menu-4 {
   display: none;
 }
 
@@ -643,15 +669,13 @@ main {
 @media (max-width: 1150px) {
 
 
-  .logo--menu ul {
+  .logo--menu .menu-1, .menu-2 {
     display: none;
   }
 
   .mobile-menu {
     display: block;
-    display: flex;
     align-items: center;
-    gap: 8px;
   }
 
   .aside-nav {
@@ -671,7 +695,7 @@ main {
   .logo--menu {
     display: flex;
     justify-content: space-between;
-    border: #e4e4e4 1px solid;
+    border: var(--black-40-outline) 1px solid;
     border-radius: 99px;  
     padding: 8px 24px;
     margin-top: 24px;

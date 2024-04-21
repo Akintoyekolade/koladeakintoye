@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/gjd7ixl.css">
 </head>
 
-<body>
+<body data-theme="dark">
     <!--Preloader-->
         <div class="preloader">
             <div class="centered-content">
@@ -23,13 +23,13 @@
     <!--Preloader End-->
 
     <div id="content">
-        <header class="mainHeader">
+        <header class="mainHeader" id="mainHeader">
             <div class="main-nav-container">
                 <nav class="main-nav">
                     <div class="logo--menu">
                         <div class="logo-image">
                             <a href="/" class="logo" title="Kolade Akintoye">
-                                <img src="assets/Logo_Dark.png" alt="Kolade Akintoye">
+                                <img src="assets/Logo_Dark.png" alt="Kolade Akintoye" id="logoImage">
                             </a> 
                         </div>
 
@@ -54,20 +54,16 @@
                                     <img src="assets/sun-icon.svg" alt="Light Mode">
                                 </button>
                             </li>
+
+                            <li class="menu-item menu-4 mobile-menu">
+                                <button id="theme-toggle" class="mobile-menu-button header-button">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 26H28M12 14H28H12ZM12 20H28H12Z" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </button>
+                            </li>
                             
-                        </ul>
-
-                        <div class="mobile-menu">
-                            <button id="theme-toggle" class="theme-button header-button">
-                                <img src="assets/sun-icon.svg" alt="Light Mode">
-                            </button>
-
-                            <button id="theme-toggle" class="mobile-menu-button header-button">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21 26H28M12 14H28H12ZM12 20H28H12Z" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                        
-                            </button>
-                        </div>
+                        </ul>                       
 
                         
                     </div>                    
@@ -233,27 +229,34 @@
                             
 
                         </div>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p><p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
-                            <p>Hero Section</p>
+                        
+                        <div class="Next-Section">
+                            <div class="latest-works">
+                                <h2>Latest Works</h2>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+                                <p>Explore my Latest Works</p>
+
+
+                            </div>
+
+                        </div>
 
 
                        
@@ -288,7 +291,7 @@
         setTimeout (function() {
             document.querySelector('.preloader').style.display = 'none';
             document.getElementById('content').style.display = 'block';
-        }, 7000);
+        }, 1);
     </script>
 
     <script src="script.js"></script>
