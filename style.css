@@ -1128,6 +1128,10 @@ main {
     border-radius: 8px;
   }
 
+  .project-data-container {
+    gap: 4px;
+  }
+
   .project-category {
     border: var(--button-black-bg-loading) 1px solid;
     padding: 4px 8px;
