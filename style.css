@@ -20,6 +20,12 @@
   --button-white-bg-loading: #e4e4e4;
   --text-grey-idle: #7c7f82;
   --background-color: #0c0c0c;
+  --primary-text: #080808;
+  --secondary-text: rgba(250, 250, 250, 0.5);
+  --black-aside-bg: #080808;
+  --icon-color: #fafafa;
+  --icon-color-2: #7C7F82;
+  --hero-image-bg: #232323;
 }
 
 /* Light Mode*/
@@ -310,7 +316,7 @@ body{
 
 
 /*----------------------------------------------------*/
-/* --- LIGHT THEME ---*/
+/* --- LIGHT THEME --- */
 
 
 body[data-theme='light'] {
@@ -338,11 +344,17 @@ body[data-theme='light'] {
   --button-white-bg-loading: #363636;
   --text-grey-idle: #1f1f1f;
 
+  --black-aside-bg: #f5f5f5;
+  --icon-color: #080808;
+  --icon-color-2: #252525;
+  --icon-color-3: #7C7F82;
+
+  --hero-image-bg: #ececec;
+
 
   .logo--menu {
     box-shadow: rgba(0, 0, 0, 0.03) 2px 2px 32px;
   }
-
   
 }
 
@@ -415,6 +427,10 @@ ul {
   display: none;
 }
 
+.icon svg{
+  filter: invert(1);
+}
+
 
 /* Sidebar Nav */
 .aside-nav-menu {
@@ -427,7 +443,7 @@ ul {
   padding-top: 80px;
   padding-left: 105px;
   padding-right: 80px;
-  background-color: var(--black-100);
+  background-color: var(--black-aside-bg);
   overflow-y: auto;
   z-index: 90;
   position: fixed;
@@ -489,7 +505,7 @@ ul {
     display: block;
     height: 1px;
     width: 100%;
-    background-color: #e4e4e4;
+    background-color: var(--button-white-bg-hover);
     position: relative;
     
   }
@@ -507,7 +523,7 @@ ul {
 }
 
 ul .active .circle {
-  background-color: #e4e4e4;
+  background-color: var(--button-white-bg-hover);
   width: 4px;
   height: 4px;
   border-radius: 99px;
@@ -526,7 +542,7 @@ ul .active {
 ul .active .active-rectangle {
   width: 100%;
   height: 1px;
-  background-color: #e4e4e4;
+  background-color: var(--button-white-bg-hover);
   position: relative;
 }
 
@@ -554,7 +570,7 @@ ul .active .active-rectangle {
 }
 
 .social-icon svg:hover {
-  border: #e4e4e4 1px solid;
+  border: var(--button-white-bg-hover) 1px solid;
 }
 
 
