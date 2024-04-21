@@ -1076,7 +1076,7 @@ main {
     display: grid;
     justify-content: center;
     align-content: center;
-    padding: 64px 16px 0 2px;
+    padding: 56px 2px 16px 2px;
     width: 100%;
     overflow: hidden;
     
