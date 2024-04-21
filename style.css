@@ -28,6 +28,15 @@
   --hero-image-bg: #232323;
 }
 
+
+:root {
+  headline-1: 56px;
+}
+
+/* Typography Mobile */
+
+
+
 /* Light Mode*/
 
 
@@ -152,7 +161,7 @@
       letter-spacing: normal;
     }
     .MobileHeadlineH4 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 16px;
       font-weight: normal;
       font-stretch: normal;
@@ -161,7 +170,7 @@
       letter-spacing: normal;
     }
     .MobileBody1 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 16px;
       font-weight: normal;
       font-stretch: normal;
@@ -170,7 +179,7 @@
       letter-spacing: normal;
     }
     .Body2---Regular {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -179,7 +188,7 @@
       letter-spacing: normal;
     }
     .MobileSubtitlePlaceholder {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -188,7 +197,7 @@
       letter-spacing: normal;
     }
     .MobileHeadlineH5 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -197,7 +206,7 @@
       letter-spacing: normal;
     }
     .MobileBody2 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -206,7 +215,7 @@
       letter-spacing: normal;
     }
     .Body3---Regular {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -215,7 +224,7 @@
       letter-spacing: -0.03px;
     }
     .MobileSubtitleTitle {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 12px;
       font-weight: normal;
       font-stretch: normal;
@@ -224,7 +233,7 @@
       letter-spacing: normal;
     }
     .MobileSubtitleDesc-1 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 12px;
       font-weight: normal;
       font-stretch: normal;
@@ -619,7 +628,7 @@ main {
 /* Hero Section */
 
 .hero-section {
-  padding-top: 32px;
+  padding-top: 0px;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -630,7 +639,7 @@ main {
 }
 
 .hero-image svg{
-  max-width: 520px;
+  max-width: 500px;
   padding-left: 64px;
   min-width: 200px;
 }
@@ -712,12 +721,80 @@ main {
   background-color: var(--button-black-bg-hover);
 }
 
+.hero--scrollButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-button {
+  position: relative;
+  top: -70px;
+  box-shadow: 0 0 0 1.5px var(--white-50);
+  padding: 8px;
+  border-radius: 99px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  transition: ease-in-out 0.2s;
+}
+
+.scroll-button:hover {
+  box-shadow: 0 0 0 2px var(--button-white-bg-hover);
+}
+
+.scroll-button .scroll-svg path {
+  stroke: var(--white-50);
+  transition: stroke 0.3s;
+}
+
+.scroll-button .scroll-svg:hover path {
+  stroke: var(--button-white-bg-hover);
+}
+
+/* Define the keyframes for scaling up and down */
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); /* Scale up */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the SVG */
+.scroll-svg {
+  animation: scaleAnimation 5s infinite; /* Run the animation every second using infinite loop */
+}
 
 /*----------------------------------------------------*/
 
 /* Mobile Hero Section */
 @media (max-width: 1150px) {
+  .MobileHeadlineH1 {
+    font-family: NotoSans;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+  }
 
+  .MobileBody2 {
+    font-family: "noto-sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+  }
 
   .logo--menu .menu-1, .menu-2 {
     display: none;
@@ -834,11 +911,84 @@ main {
     
   }
 
+  .scroll-button {
+    display: none;
+  }
+  
+  
+
+
 }
 
 /*----------------------------------------------------*/
 
 
+.next-sections {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 0 56px;
+  width: 100%;
+  
+}
+
+
+
+
+.latest-works-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: var(--black-40-outline) 1px solid;
+  border-radius: 16px;
+  background-color: var(--black-black-30);
+  overflow: hidden;
+}
+
+.main-card-container .project-thumbnail img {
+  width: 760px;
+  overflow-y: hidden ;
+}
+
+.project-thumbnail {
+  min-width: 200px;
+  overflow: hidden ;
+  flex: 0.8;
+}
+
+
+
+.texts--button {
+  padding: 64px;
+  flex: 0.5;
+  top: 0;
+  bottom: 0;
+  display: block;
+  position: relative;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.main-card-container .button {
+  display: inline-flex;
+  position: relative;
+  bottom: 0;
+}
+
+/*.project-thumbnail {
+  background-image: url('assets/Image1-1.png');
+  background-size: cover;
+  background-position: center;
+  flex: 1.5;
+}*/
 
 
 
