@@ -336,11 +336,11 @@ body[data-theme='light'] {
   --white-20: rgba(26, 26, 26, 0.2);
 
   --button-black-bg-default: #fafafa;
-  --button-black-bg-hover: rgba(241, 241, 241, 0.7);
+  --button-black-bg-hover: rgba(213, 213, 213, 0.7);
   --button-black-bg-loading: #e4e4e4;
 
   --button-white-bg-default: #080808;
-  --button-white-bg-hover: #1a1a1a;
+  --button-white-bg-hover: #292929;
   --button-white-bg-loading: #363636;
   --text-grey-idle: #1f1f1f;
 
@@ -556,7 +556,7 @@ ul .active .active-rectangle {
   margin-top: 64px;
 }
 
-.social-icon svg {
+.social-icon .aside-icon {
   border-radius: 99px;
   display: flex;
   place-items: center;
@@ -564,14 +564,33 @@ ul .active .active-rectangle {
   justify-content: center;
   background-color: var(--black-60);
   padding: 8px;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
   height: 40px;
-  width: 40px;
+  width: 40px;  
 }
 
 .social-icon svg:hover {
-  border: var(--button-white-bg-hover) 1px solid;
+  box-shadow: 0 0 0 1px var(--button-white-bg-hover);
 }
+
+.social-icon .aside-icon path {
+  background-color: var(--black-60);
+  transition: ease-in-out 0.2s;
+
+}
+
+.social-icon .aside-icon:hover path {
+    stroke: var(--button-white-bg-default);
+
+
+}
+
+
+
+
+
+
+
 
 
 .nav-clock {
@@ -581,6 +600,8 @@ ul .active .active-rectangle {
   font-weight: 500;
   color: var(--white-70);
 }
+
+
 
 
 .layout-container {  
@@ -613,6 +634,7 @@ main {
   padding-left: 64px;
   min-width: 200px;
 }
+
 
 .multi-designer {
   display: inline-flex;
