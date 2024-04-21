@@ -64,32 +64,34 @@ themeToggle.addEventListener('click', function() {
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
-    
+
     $('.scroll-to-section a[href^="#"]').on('click', function (e) {
         e.preventDefault();
-        
+
         $(document).off("scroll");
-        
+
         $('.scroll-to-section a').each(function () {
             $(this).removeClass('active');
         });
-        
+
         $(this).addClass('active');
-        
+
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        
+
         if (target.length) {
             var width = $(window).width();
-            
+
             if (width < 991) {
-                $('.menu-trigger').removeClass('active');
-                $('.header-area .nav').slideUp(200);
+                $('.scroll-to-section').removeClass('active');
+                $('.mainHeader .main-nav').slideUp(200); // $('.mainHeader .nav').slideUp(200);
             }
-            
+
+            // Adjust the scrollTop to factor in the height of the header
+            var headerHeight = $('.mainHeader').height(); // Change '.header-area' to your actual header class or ID
             $('html, body').stop().animate({
-                scrollTop: (target.offset().top) - 79
-            }, 500, 'swing', function () {
+                scrollTop: (target.offset().top - 130) // Subtract the header height from the target offset
+            }, 800, 'easeInOutExpo', function () {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
             });

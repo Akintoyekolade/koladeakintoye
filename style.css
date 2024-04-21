@@ -82,7 +82,7 @@
     .DesktopHeadline-2 {
       font-family: "noto-sans", sans-serif;
       font-size: 48px;
-      font-weight: normal;
+      font-weight: bold;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.08;
@@ -100,21 +100,13 @@
     .DesktopHeadline-3 {
       font-family: "noto-sans", sans-serif;
       font-size: 32px;
-      font-weight: normal;
+      font-weight: bold;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.13;
       letter-spacing: normal;
     }
-    .MobileHeadlineH2 {
-      font-family: "noto-sans", sans-serif;
-      font-size: 24px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.17;
-      letter-spacing: normal;
-    }
+
     .DesktopHeadline-4 {
       font-family: "noto-sans", sans-serif;
       font-size: 24px;
@@ -143,9 +135,9 @@
       letter-spacing: normal;
     }
     .DesktopHeadline-6 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 400;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.22;
@@ -163,7 +155,7 @@
     .MobileHeadlineH4 {
       font-family: "noto-sans", sans-serif;
       font-size: 16px;
-      font-weight: normal;
+      font-weight: bold;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.5;
@@ -180,40 +172,15 @@
     }
     .Body2---Regular {
       font-family: "noto-sans", sans-serif;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.38;
       letter-spacing: normal;
     }
-    .MobileSubtitlePlaceholder {
-      font-family: "noto-sans", sans-serif;
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.71;
-      letter-spacing: normal;
-    }
-    .MobileHeadlineH5 {
-      font-family: "noto-sans", sans-serif;
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.43;
-      letter-spacing: normal;
-    }
-    .MobileBody2 {
-      font-family: "noto-sans", sans-serif;
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.43;
-      letter-spacing: normal;
-    }
+
+
     .Body3---Regular {
       font-family: "noto-sans", sans-serif;
       font-size: 14px;
@@ -223,15 +190,7 @@
       line-height: 1.57;
       letter-spacing: -0.03px;
     }
-    .MobileSubtitleTitle {
-      font-family: "noto-sans", sans-serif;
-      font-size: 12px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.33;
-      letter-spacing: normal;
-    }
+
     .MobileSubtitleDesc-1 {
       font-family: "noto-sans", sans-serif;
       font-size: 12px;
@@ -241,15 +200,81 @@
       line-height: 1.33;
       letter-spacing: normal;
     }
-    .MobileSubtitleDesc-2 {
-      font-family: NotoSans;
-      font-size: 10px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.6;
-      letter-spacing: normal;
-    }
+
+/*------------- Typography Style Mobile ---------------------------*/
+    
+@media (max-width: 1150px) {
+    .MobileHeadlineH1 {
+    font-family: NotoSans;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+  }
+
+  .MobileBody2 {
+    font-family: "noto-sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+  }
+
+  .MobileHeadlineH2 {
+    font-family: "noto-sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+  }
+
+  .MobileSubtitleDesc-2 {
+    font-family: "noto-sans", sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+  }
+
+  .MobileSubtitleTitle {
+    font-family: "noto-sans", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+  }
+
+  .MobileSubtitlePlaceholder {
+    font-family: "noto-sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+  }
+  .MobileHeadlineH5 {
+    font-family: "noto-sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+  }
+}
+
+/*--------------- Document Reset ---------------*/    
 
 * {
   margin: 0;
@@ -776,25 +801,7 @@ main {
 
 /* Mobile Hero Section */
 @media (max-width: 1150px) {
-  .MobileHeadlineH1 {
-    font-family: NotoSans;
-    font-size: 32px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.13;
-    letter-spacing: normal;
-  }
 
-  .MobileBody2 {
-    font-family: "noto-sans", sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-  }
 
   .logo--menu .menu-1, .menu-2 {
     display: none;
@@ -927,11 +934,16 @@ main {
   display: grid;
   justify-content: center;
   align-content: center;
-  padding: 0 56px;
+  padding: 56px 56px;
   width: 100%;
   
 }
 
+.cards-container {
+  margin-top: 80px;
+  gap: 32px;
+  display: grid;
+}
 
 
 
@@ -939,43 +951,44 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
+}
+
+.latest-works-heading h5 {
+  color: var(--text-grey-idle);
 }
 
 .main-card-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  border: var(--black-40-outline) 1px solid;
-  border-radius: 16px;
-  background-color: var(--black-black-30);
-  overflow: hidden;
+  min-width: 300px;
   width: 100%;
+  height: 520px;
+
 }
 
-.main-card-container .project-thumbnail img {
-  width: 760px;
-  overflow-y: hidden ;
+.single-card-container {
+  width: 100%;
+  box-shadow: var(--black-40-outline) 0 0 0 1px; 
+  /*--border: var(--black-40-outline) 1px solid;--*/
+  overflow: hidden;
+  border-radius: 16px;
+  opacity: 100%; /* Reduce to 50% LATER -----------*/
+  transition: ease-in-out 0.3s;
+  background-color: var(--background-color);
 }
 
-.project-thumbnail {
-  min-width: 200px;
-  overflow: hidden ;
-  flex: 0.8;
+.single-card-container:hover {
+  opacity: 100%;
+  transform: scale(1.01) translateY(-1%);
 }
-
-
 
 .texts--button {
-  padding: 64px;
-  flex: 0.5;
-  top: 0;
-  bottom: 0;
-  display: block;
-  position: relative;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
-  height: 100%;
-
+  max-width: 700px;
+  align-items: flex-start;
+  display: flex;
+  padding: 64px;
 }
 
 .main-card-container .button {
@@ -984,12 +997,132 @@ main {
   bottom: 0;
 }
 
-/*.project-thumbnail {
-  background-image: url('assets/Image1-1.png');
-  background-size: cover;
-  background-position: center;
-  flex: 1.5;
-}*/
+.project-thumbnail {  
+  min-width: 500px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%; 
+  position: relative;
+  align-items: center;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+}
+
+.project-thumbnail:hover img{
+  transform: scale(1.1);
+}
+
+.project-data-container {
+  display: flex;
+  align-content: center;
+  gap: 8px;
+}
+
+.project-data-container a {
+  text-decoration: none;
+  color: var(--white-100-text);
+  line-height: 0;
+}
+
+.project-data-container a:hover {
+  text-decoration: underline;
+}
+
+.project-category {
+  padding: 8px 16px;
+  background-color: var(--black-60);
+  border-radius: 99px;
+  align-content: center;
+  place-items: center;
+}
+
+.card-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+@media (max-width: 1250px) {
+
+  .next-sections {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 120px 16px 0 16px;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+
+  .latest-works-heading {
+    gap: 8px;
+  }
+  
+  .cards-container {
+    margin-top: 80px;
+    gap: 32px;
+    display: grid;
+  }
+  
+
+
+
+
+
+  .main-card-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+
+  .single-card-container {
+    width: 100%;
+    border: var(--black-60) 1px solid;
+    overflow: hidden;
+    padding: 16px;
+    background-color: var(--black-black-30);
+  }
+
+  .texts--button {
+    padding: 24px 0;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    position: relative;
+    flex-direction: column;
+  
+  }
+
+  .project-thumbnail { 
+  min-width: 100%; 
+  min-height: 230px;
+  overflow: hidden;
+  border: var(--black-40-outline) 1px solid;
+  border-radius: 8px;
+}
+
+.project-category {
+  border: var(--button-black-bg-loading) 1px solid;
+  padding: 4px 8px;
+}
+
+}
+
+
+
 
 
 
