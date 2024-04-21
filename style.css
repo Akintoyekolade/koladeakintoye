@@ -315,17 +315,34 @@ body{
 
 body[data-theme='light'] {
   --background-color: #fafafa;
-  color: var(--black-100);
+  --black-100: #fafafa;
+  --black-70: rgba(250, 250, 250, 0.7); /* Replacements */
+  --black-40-outline: #d8d8d8;
+  --black-90-bg: #9a9a9a;
+  --black-60: #ededed;
+  --black-black-30: rgba(250, 250, 250, 0.3);
+  --black-black-50: rgba(250, 250, 250, 0.4);
 
-  .aside-nav-menu {
-    background-color: var(--button-white-bg-hover);
-    color: var(--black-100);
-  }
+  --white-100-text: #080808;
+  --white-90-bg: #0e0e0e;
+  --white-50: rgba(26, 26, 26, 0.5);
+  --white-70: rgba(26, 26, 26, 0.7);
+  --white-20: rgba(26, 26, 26, 0.2);
+
+  --button-black-bg-default: #fafafa;
+  --button-black-bg-hover: rgba(241, 241, 241, 0.7);
+  --button-black-bg-loading: #e4e4e4;
+
+  --button-white-bg-default: #080808;
+  --button-white-bg-hover: #1a1a1a;
+  --button-white-bg-loading: #363636;
+  --text-grey-idle: #1f1f1f;
+
 
   .logo--menu {
-    background-color: var(--white-50);
-    box-shadow: rgba(0, 0, 0, 0.097) 2px 2px 32px;
+    box-shadow: rgba(0, 0, 0, 0.03) 2px 2px 32px;
   }
+
 
 
 
