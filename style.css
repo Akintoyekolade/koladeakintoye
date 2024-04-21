@@ -1058,14 +1058,25 @@ main {
   gap: 24px;
 }
 
+/* @media (max-width: 992px) and (min-width: 100px) { 
+    @media (max-width: 1024px) and (min-width: 500px)
+  */
 
-@media (max-width: 1250px) {
+@media (max-width: 1024px) and (min-width: 500px) {
+    .project-thumbnail {
+      height: 500px;
+      min-height: 300px;
+    }
+
+  }
+
+@media (max-width: 970px) and (min-width: 100px) {
 
   .next-sections {
     display: grid;
     justify-content: center;
     align-content: center;
-    padding: 120px 16px 0 16px;
+    padding: 64px 16px 0 2px;
     width: 100%;
     overflow: hidden;
     
@@ -1076,15 +1087,10 @@ main {
   }
   
   .cards-container {
-    margin-top: 80px;
+    margin-top: 32px;
     gap: 32px;
     display: grid;
   }
-  
-
-
-
-
 
   .main-card-container {
     display: flex;
