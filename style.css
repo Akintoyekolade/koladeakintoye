@@ -772,7 +772,7 @@ main {
 
 .scroll-button .scroll-svg path {
   stroke: var(--white-50);
-  transition: stroke 0.3s;
+  transition: stroke 0.2s;
 }
 
 .scroll-button .scroll-svg:hover path {
@@ -785,7 +785,7 @@ main {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5); /* Scale up */
+    transform: scale(1.7); /* Scale up */
   }
   100% {
     transform: scale(1);
@@ -920,7 +920,7 @@ main {
 
   .scroll-button {
 
-    top: 24px;
+    top: 16px;
     box-shadow: 0 0 0 1.5px var(--white-50);
     padding: 8px;
     border-radius: 99px;
