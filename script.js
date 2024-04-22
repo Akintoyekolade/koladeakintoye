@@ -88,9 +88,9 @@ $(document).ready(function () {
             }
 
             // Adjust the scrollTop to factor in the height of the header
-            var headerHeight = $('.mainHeader').height(); // Change '.header-area' to your actual header class or ID
+            var headerHeight = $('.mainHeader').height(); 
             $('html, body').stop().animate({
-                scrollTop: (target.offset().top - 330) // Subtract the header height from the target offset
+                scrollTop: (target.offset().top - 430)
             }, 800, 'easeInOutExpo', function () {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
