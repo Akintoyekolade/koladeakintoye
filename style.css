@@ -308,6 +308,7 @@
 
 .secondary-button:hover {
   background-color: var(--button-black-bg-hover);
+  transform: translateY(-5px);
 }
 
     
