@@ -590,27 +590,38 @@ ul {
   }
   
   #mobile-nav-menu {
-    position: absolute;
+    position: fixed;
     justify-self: center;
     place-self: center;
     max-height: 0;
     width: 100%;
     overflow: hidden;
-    transition: max-height 1s ease-out;
+    transition: max-height 0.5s ease-out;
     border-radius: 16px;
     top: 56px;
     left: -16px;
     margin: 2px 16px;
     padding: 40px 24px;
-    background-color: var(--black-70);
+    background-color: var(--black-90-bg);
     border: var(--black-40-outline) 1px solid;
-    z-index: 100;
+    backdrop-filter: blur(10px);
+    z-index: 99;
     text-align: center;
+    animation: slideIn 0.5s ease-in-out;
   }
   
-  #mobile-nav-menu:not(.mobile-menu-hidden) {
+  @keyframes slideIn {
+    from {
+      transform: translateY(-12px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  #mobile-nav-menu:not(.open) {
     max-height: 670px;
-    transition: max-height 1s ease-in;
+    transition: max-height 0.5s ease-in;
   }
   
   #mobile-nav-menu .hide-button {
@@ -638,6 +649,76 @@ ul {
   } 
   
   */
+
+  #mobile-nav-menu a {
+    text-decoration: none;
+    color: var(--text-grey-idle);
+    font-size: 14px;
+    transition: ease-in-out 0.2s;  
+}
+
+#mobile-nav-menu a:hover {
+  color: var(--button-white-bg-hover);
+}
+
+.hover-rectangle {
+  width: 0;
+  height: 1px;
+  animation: fadeIn 1s forwards;
+  display: none;
+}
+
+/* Keyframe animation for fading in */
+@keyframes fadeIn {
+  0% {
+    width: 0;  /* Start width at 0 */
+    opacity: 0.8; /* Start opacity at 0 */
+  }
+
+  100% {
+    width: 100%; /* Full width */
+    opacity: 1;  /* Fully faded in */
+  }
+}
+
+#mobile-nav-menu li a:hover{
+  .hover-rectangle {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--button-white-bg-hover);
+    position: relative;
+    
+  }
+}
+
+#mobile-nav-menu li .nav--icon {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#mobile-nav-menu .nav--icon svg {
+  margin-left: 4px;
+  transform: translateY(-2px);
+}
+
+
+  #mobile-nav-menu .active {
+    color: var(--white-100-text);
+  }
+
+  #mobile-nav-menu .social-icons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #mobile-nav-menu .nav-clock {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+  }
 
 
 }
@@ -995,6 +1076,10 @@ main {
     padding: 0;
     margin-top: -24px;
     width: 100%;  
+  }
+
+  .multi-designer .MobileSubtitleDesc-2{
+    font-size: 12px;
   }
 
   .multi-designer svg {
