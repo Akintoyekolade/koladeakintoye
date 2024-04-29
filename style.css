@@ -221,6 +221,16 @@
     letter-spacing: normal;
   }
 
+  .MobileHeadlineH5 {
+      font-family: "noto-sans", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+  }
+    
   .MobileSubtitleDesc-1 {
     font-family: "noto-sans", sans-serif;
     font-size: 12px;
@@ -260,14 +270,17 @@
     line-height: 1.71;
     letter-spacing: normal;
   }
-  .MobileHeadlineH5 {
+
+  .MobileSubtitlePlaceholder-2 {
     font-family: "noto-sans", sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 13px;
+    /* identical to box height, or 166% */
+    text-align: center;
+    letter-spacing: -0.001em;
+    
   }
   
 }
@@ -300,7 +313,7 @@
   border-radius: 99px;
   text-decoration: none;
   transition: ease-in-out 0.2s;
-  display: flex;
+  display: inline-flex;
   gap: 4px;
   height: 56px;
   align-items: center;
@@ -314,6 +327,29 @@
 .secondary-button:hover {
   background-color: var(--button-black-bg-hover);
   transform: translateY(-5px);
+}
+
+.primary-button-w-icon {    
+  padding: 16px 24px;
+  background-color: var(--button-white-bg-default);
+  color: var(--button-black-bg-default);
+  border-radius: 99px;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  max-height: 56px;
+}
+
+.primary-button-w-icon svg {
+  transform: translateY(4px);
+}
+
+.primary-button-w-icon:hover {
+  background-color: var(--button-white-bg-hover);
+  transform: translateY(-5px); 
+
 }
 
     
@@ -336,8 +372,27 @@
         width: 16px; 
       }
     
+   .primary-button-w-icon {
+    font-size: 12px;
+    padding: 10px 12px;
+    border-width: 0.5px;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    height: 36px;
+
+  }
+
+  .primary-button-w-icon svg {
+    transform: translateY(2px);
+    width: 16px; 
+  }  
+    
 }
-/*--------------- Buttons ---------------*/  
+
+/*------------------- Buttons --------------------*/  
 
 /*--------------- Document Reset ---------------*/    
 
@@ -686,7 +741,8 @@ ul {
 #mobile-nav-menu li .link-icon svg {
   position: absolute;
   margin-left: 40px;
-  transform: translateY(-24px);
+  transform: translateY(-22px);
+  width: 16px;
 }
 
 
@@ -979,6 +1035,7 @@ main {
 
 .scroll-button:hover {
   box-shadow: 0 0 0 2px var(--button-white-bg-hover);
+  transform: translateY(-5px);
 }
 
 .scroll-button .scroll-svg path {
@@ -1028,7 +1085,7 @@ main {
   }
 
   body {
-    margin: 0 32px;
+    margin: 0 16px;
   }
 
   main {
@@ -1273,6 +1330,12 @@ main {
   gap: 24px;
 }
 
+.all-projects-button {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+}
+
 
 /* Media queries separated by their respective styles */
 @media (max-width: 1024px) {
@@ -1342,6 +1405,10 @@ main {
     font-weight: 400;
   }
 
+  .all-projects-button {
+    padding: 24px 0;
+  }
+
 
 }
 
@@ -1360,11 +1427,41 @@ main {
   }
 }
 
+/*--------------- Design Stack ---------------*/  
+
+.scrolling-icons {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  gap: 56px;
+  display: flex;
+}
+
+.icon {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);}
+
+  100% {
+    transform: translateX(-100%);
+  }
+
+  
+}
 
 
-
-
-
+/*--------------- Design Stack Responsive ---------------*/  
+@media (max-width: 1024px) {
+  .scrolling-icons {
+    gap: 16px;
+  }
+}
 
 
 
