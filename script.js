@@ -10,10 +10,11 @@ function updateClock() {
     const formattedTime = currentDate.toTimeString().slice(0, 8); // Extract HH:MM:SS from time
   
     // Combine the date, time, and local GMT offset
-    const clockDisplay = formattedDate + "<br>" + formattedTime + " GMT" + (offsetHours >= 0 ? "+" : "") + offsetHours;
+    const clockDisplay = formattedDate + "<br>" + formattedTime + "<br>" + " GMT" + (offsetHours >= 0 ? "+" : "") + offsetHours;
   
     // Update the clock display
     document.getElementById('clock').innerHTML = clockDisplay;
+    document.getElementById('clock-desktop').innerHTML = clockDisplay;
   }
   
   // Update the clock every second
@@ -21,6 +22,13 @@ function updateClock() {
   
   // Initialize the clock immediately
   updateClock();
+
+
+  //nav-clock-desktop
+
+
+
+
 
 
 
@@ -50,22 +58,23 @@ themeToggle.addEventListener('click', function() {
 
 
 // Mobile Menu Function
-function toggleMenu () {
+function toggleMenu() {
     var menu = document.getElementById('mobile-nav-menu');
     menu.classList.toggle('mobile-menu-hidden');
-
+    menu.classList.toggle('open');
+  
     var btn = document.getElementById('menu-toggle');
     btn.classList.toggle('open');
-}
-
-// Close the Mobile Menu
-
-function closeMenu() {
+  }
+  
+  // Close the Mobile Menu
+  function closeMenu() {
     var menu = document.getElementById('mobile-nav-menu');
-    menu.classList.add('mobile-menu-hidden');
+    menu.classList.remove('open'); // Remove the 'open' class first
+    menu.classList.add('mobile-menu-hidden'); // Then add the 'mobile-menu-hidden' class
     var btn = document.getElementById('menu-toggle');
-    btn.classList.remove('open')
-}
+    btn.classList.remove('open');
+  }
 
 
 
