@@ -329,11 +329,13 @@
     height: 36px;
     align-items: center;
 
-      svg {
-        width: 16px;
-        margin-top: 4px;
+    
+  }  
+  .secondary-button svg {
+        transform: translateY(2px);
+        width: 16px; 
       }
-  }
+    
 }
 /*--------------- Buttons ---------------*/  
 
@@ -529,6 +531,123 @@ ul {
 }
 
 
+
+/*-------- mobile menu dropdown ----------------*/
+
+.mobile-menu-hidden {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+
+  #theme-toggle svg{
+    width: 24px;
+    height: 24px;
+    transform: translateY(2px);
+  }
+
+  #menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+    transform: translateY(-1px);
+  }
+  
+  #menu-toggle .bar{
+    display: block;
+    width: 18px;
+    height: 2px;
+    border-radius: 99px;
+    background-color: var(--button-white-bg-default);
+    margin: 4x auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #menu-toggle .bar:last-child {
+    width: 9px;
+  }
+
+  #menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #menu-toggle.open .bar:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+    width: 18px;
+  }
+
+
+  #mobile-nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  
+  #mobile-nav-menu {
+    position: absolute;
+    justify-self: center;
+    place-self: center;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    border-radius: 16px;
+    top: 56px;
+    left: -16px;
+    margin: 2px 16px;
+    padding: 40px 24px;
+    background-color: var(--black-70);
+    border: var(--black-40-outline) 1px solid;
+    z-index: 100;
+    text-align: center;
+  }
+  
+  #mobile-nav-menu:not(.mobile-menu-hidden) {
+    max-height: 670px;
+    transition: max-height 1s ease-in;
+  }
+  
+  #mobile-nav-menu .hide-button {
+    display: none;
+  }
+  
+
+
+  /*  
+  #mobile-nav-menu {
+    position: absolute;
+    justify-self: center;
+    place-self: center;
+    height: auto;
+    width: 100%;
+    border-radius: 16px;
+    top: 56px;
+    left: -16px;
+    margin: 2px 16px;
+    padding: 40px 24px;
+    background-color: var(--black-70);
+    backdrop-filter: blur(10px);
+    border: var(--black-40-outline) 1px solid;
+    z-index: 99;
+  } 
+  
+  */
+
+
+}
+
+
+
+
+
+
+
 /* Sidebar Nav */
 .aside-nav-menu {
   justify-content: safe;
@@ -608,12 +727,10 @@ ul {
   }
 }
 
-
 .nav--icon {
   display: flex;
   align-items: center;
 }
-
 
 .nav--icon svg {
   margin-left: 4px;

@@ -49,9 +49,23 @@ themeToggle.addEventListener('click', function() {
 });
 
 
+// Mobile Menu Function
+function toggleMenu () {
+    var menu = document.getElementById('mobile-nav-menu');
+    menu.classList.toggle('mobile-menu-hidden');
 
+    var btn = document.getElementById('menu-toggle');
+    btn.classList.toggle('open');
+}
 
+// Close the Mobile Menu
 
+function closeMenu() {
+    var menu = document.getElementById('mobile-nav-menu');
+    menu.classList.add('mobile-menu-hidden');
+    var btn = document.getElementById('menu-toggle');
+    btn.classList.remove('open')
+}
 
 
 
