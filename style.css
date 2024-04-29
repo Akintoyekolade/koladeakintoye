@@ -285,8 +285,10 @@
   height: 56px;
 }
 
+
 .primary-button:hover {
   background-color: var(--button-white-bg-hover);
+  transform: translateY(-5px);
 }
 
 
@@ -305,6 +307,9 @@
 
 }
 
+.secondary-button svg {
+  transform: translateY(2px);
+}
 
 .secondary-button:hover {
   background-color: var(--button-black-bg-hover);
@@ -611,7 +616,8 @@ ul {
 
 
 .nav--icon svg {
-  margin-left: 8px;
+  margin-left: 4px;
+  transform: translateY(-2px);
 }
 
 ul .active .circle {
