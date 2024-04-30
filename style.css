@@ -1460,6 +1460,8 @@ main {
 @media (max-width: 1024px) {
   .scrolling-icons {
     gap: 16px;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
