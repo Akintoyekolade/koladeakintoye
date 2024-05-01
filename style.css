@@ -1094,6 +1094,7 @@ main {
     padding-top: 8px;
   }
 
+
   .logo--menu {
     display: flex;
     justify-content: space-between;
@@ -1433,11 +1434,11 @@ main {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
-  gap: 56px;
   display: flex;
+  width: 100%;
 }
 
-.icon {
+.scrolling-icons .icon {
   display: inline-block;
   justify-content: center;
   text-align: center;
@@ -1450,9 +1451,11 @@ main {
 
   100% {
     transform: translateX(-100%);
-  }
+  }  
+}
 
-  
+.scrolling-icons .icon img {
+  width: 72px;
 }
 
 
@@ -1462,6 +1465,10 @@ main {
     gap: 16px;
     width: 100%;
     overflow: hidden;
+  }
+
+  .scrolling-icons .icon img {
+    width: 40px;
   }
 }
 
