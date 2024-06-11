@@ -1430,12 +1430,16 @@ main {
 
 /*--------------- Design Stack ---------------*/  
 
+
+
 .scrolling-icons {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
   display: flex;
-  width: 100%;
+  max-width: 100%;
+  border: var(--white-90-bg) 1px solid;
+
 }
 
 .scrolling-icons .icon {
@@ -1469,6 +1473,10 @@ main {
 
   .scrolling-icons .icon img {
     width: 40px;
+  }
+
+  .design-stack {
+   max-width: 100vw;
   }
 }
 
