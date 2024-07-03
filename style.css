@@ -94,7 +94,7 @@
       letter-spacing: normal;
     }
     .DesktopHeadline-3 {
-      font-family: "noto-sans", sans-serif;
+      font-family: NotoSans;
       font-size: 32px;
       font-weight: bold;
       font-stretch: normal;
@@ -218,6 +218,16 @@
     font-stretch: normal;
     font-style: normal;
     line-height: 1.17;
+    letter-spacing: normal;
+  }
+
+  .MobileHeadlineH3 {
+    font-family: "noto-sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
     letter-spacing: normal;
   }
 
@@ -1493,6 +1503,14 @@ main {
 .design-stack{
   width: 100%;
   overflow-x: hidden;
+  padding: 0 16px;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+}
+
+.design-stack-heading {
+  margin-bottom: 32px;
 }
 
 .scrolling-icons .icon {
