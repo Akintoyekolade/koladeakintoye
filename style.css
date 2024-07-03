@@ -1593,7 +1593,7 @@ main {
 
 /*--------------- Design Spectrum ---------------*/  
 .design-spectrum {
-  padding: 80px 0;
+  padding: 80px 16px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -1637,7 +1637,7 @@ main {
 
 @media (max-width: 1024px) {
   .design-spectrum {
-    padding: 32px 0;
+    padding: 32px 16px;
     display: grid;
     justify-content: center;
   }
