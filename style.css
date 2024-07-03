@@ -394,6 +394,57 @@
 
 /*------------------- Buttons --------------------*/  
 
+
+
+/*------------------- Animations --------------------*/
+
+.fadeInUp {
+  transform: translateY(64px);
+  transition: transform 0.8s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0%;  
+}
+
+.fadeInUp.show {
+  transform: none;
+  opacity:  100%;
+}
+
+.fadeInDown {
+  transform: translateY(-64px);
+  transition: transform 0.8s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0%;  
+}
+
+.fadeInDown {
+    transform: none;
+    opacity:  100%;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  transform: translateX(64px);
+  transition: transform 0.8s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0%; 
+}
+
+.fadeInLeft.show {
+  transform: none;
+  opacity:  100%;
+}
+
+.fadeInRight{
+  animation-name: fadeInLeft;
+  transform: translateX(-64px);
+  transition: transform 0.8s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0%; 
+}
+
+.fadeInRight.show {
+  transform: none;
+  opacity:  100%;
+}
+
+
 /*--------------- Document Reset ---------------*/    
 
 * {
@@ -1243,6 +1294,17 @@ main {
   min-width: 300px;
   width: 100%;
   height: 520px;
+}
+
+.animation-card {
+  transition: transform 0.8s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0%;
+  transform: translateX(20%);
+}
+
+.animation-card.show {
+  transform: none;
+  opacity:  50%;
 }
 
 .single-card-container {
