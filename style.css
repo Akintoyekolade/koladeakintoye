@@ -84,17 +84,9 @@
       line-height: 1.08;
       letter-spacing: normal;
     }
-    .MobileHeadlineH1 {
-      font-family: NotoSans;
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.13;
-      letter-spacing: normal;
-    }
+
     .DesktopHeadline-3 {
-      font-family: NotoSans;
+      font-family: "noto-sans", sans-serif;
       font-size: 32px;
       font-weight: bold;
       font-stretch: normal;
@@ -112,15 +104,7 @@
       line-height: 1.17;
       letter-spacing: normal;
     }
-    .MobileHeadlineH3 {
-      font-family: NotoSans;
-      font-size: 20px;
-      font-weight: 800;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.2;
-      letter-spacing: normal;
-    }
+
     .DesktopHeadline-5 {
       font-family: "noto-sans", sans-serif;
       font-size: 20px;
@@ -192,7 +176,7 @@
     
 @media (max-width: 1150px) {
     .MobileHeadlineH1 {
-    font-family: NotoSans;
+    font-family: "noto-sans", sans-serif;
     font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
@@ -200,6 +184,7 @@
     line-height: 1.13;
     letter-spacing: normal;
   }
+
 
   .MobileBody2 {
     font-family: "noto-sans", sans-serif;
@@ -835,7 +820,7 @@ ul {
 }
 
 
-/* Sidebar Nav */
+/*--------------------------- Sidebar Nav ---------------------*/
 .aside-nav-menu {
   justify-content: safe;
   place-content: top;
@@ -1274,6 +1259,7 @@ main {
   align-content: center;
   padding: 56px 56px;
   width: 100%;
+  background-color: var(--black-100);
 }
 
 .cards-container {
@@ -1503,14 +1489,16 @@ main {
 .design-stack{
   width: 100%;
   overflow-x: hidden;
-  padding: 0 16px;
+  padding: 80px 16px;
   display: grid;
   justify-content: center;
   place-items: center;
+  border-top: var(--black-40-outline) 1px solid;
+  border-bottom: var(--black-40-outline) 1px solid;
 }
 
 .design-stack-heading {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .scrolling-icons .icon {
@@ -1541,6 +1529,15 @@ main {
 
 /*--------------- Design Stack Responsive ---------------*/  
 @media (max-width: 1024px) {
+
+  .design-stack{
+    padding: 32px 16px;
+}
+
+.design-stack-heading {
+  margin-bottom: 32px;
+}
+
   .scrolling-icons {
     gap: 16px;
     width: 100%;
@@ -1557,7 +1554,24 @@ main {
 
 
 
+/*--------------- Design Spectrum ---------------*/  
+.design-spectrum {
+  padding: 80px 0;
+}
 
+.button-link-icon svg {
+  width: 64px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .design-spectrum {
+    padding: 32px 0;
+    display: grid;
+    justify-content: center;
+  }
+}
 
 
 
