@@ -1139,6 +1139,7 @@ main {
     padding-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
+    overflow-x: visible;
   }
 
 
@@ -1410,7 +1411,8 @@ main {
     gap: 16px;
     display: grid;
     grid-template-columns: auto auto;
-    margin: 32px;
+    overflow: hidden;
+    padding: 8px;
   }
 
   .main-card-container {
@@ -1423,7 +1425,7 @@ main {
   .single-card-container {
     border: var(--black-60) 1px solid;
     overflow: hidden;
-    padding: 16px;
+    padding: 24px;
     background-color: var(--black-black-30);
     opacity: 100%;
   }
@@ -1488,10 +1490,10 @@ main {
 
 /*--------------- Design Stack ---------------*/  
 
-.scrolling-icons {
-  width: 20px; /* Set the width of the container based on your layout */
-  overflow: hidden; /* Hide the content that overflows horizontally */
+.design-stack{
+  width: 100%;
   border: var(--button-black-bg-loading) 1px solid;
+  overflow-x: hidden;
 }
 
 .scrolling-icons .icon {
@@ -1510,7 +1512,7 @@ main {
   white-space: nowrap; /* Prevent wrapping of content */
   animation: scroll 120s linear infinite; /* Adjust timing and duration based on your needs */
 }
-/* 
+/* */
 @keyframes scroll {
   0% {
     transform: translateX(0);}
@@ -1519,7 +1521,7 @@ main {
     transform: translateX(-100%);
   }  
 }
-*/
+
 /*--------------- Design Stack Responsive ---------------*/  
 @media (max-width: 1024px) {
   .scrolling-icons {
