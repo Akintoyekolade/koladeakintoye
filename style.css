@@ -994,6 +994,7 @@ ul .active .active-rectangle {
 main {
   flex: 1;
   margin-left: 337px;
+  overflow-x: hidden;
 }
 
 
@@ -1283,7 +1284,7 @@ main {
 
 .main-card-container {
   display: flex;
-  min-width: 300px;
+  min-width: 250px;
   width: 100%;
   height: 520px;
 }
@@ -1409,7 +1410,7 @@ main {
     gap: 16px;
     display: grid;
     grid-template-columns: auto auto;
-    margin: 24px;
+    margin: 32px;
   }
 
   .main-card-container {
