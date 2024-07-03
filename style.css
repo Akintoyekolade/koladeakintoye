@@ -1490,20 +1490,16 @@ main {
 
 
 .scrolling-icons {
-  position: relative;
-  white-space: nowrap;
-  overflow: hidden;
-  display: flex;
-  max-width: 100%;
-  border: var(--white-90-bg) 1px solid;
-
+  width: 100%; /* Set the width of the container based on your layout */
+  overflow: hidden; /* Hide the content that overflows horizontally */
 }
 
 .scrolling-icons .icon {
   display: inline-block;
   justify-content: center;
   text-align: center;
-  animation: scroll 10s linear infinite;
+  width: 140px;
+  height: 64px;
 }
 
 @keyframes scroll {
@@ -1519,17 +1515,26 @@ main {
   width: 72px;
 }
 
+.scroll-content {
+  white-space: nowrap; /* Prevent wrapping of content */
+  display: inline-block; /* Ensure elements appear in a line */
+  animation: scroll 120s linear infinite; /* Adjust timing and duration based on your needs */
+}
+
 
 /*--------------- Design Stack Responsive ---------------*/  
 @media (max-width: 1024px) {
   .scrolling-icons {
     gap: 16px;
     width: 100%;
-    overflow: hidden;
-  }
+}
 
   .scrolling-icons .icon img {
     width: 40px;
+  }
+
+  .scrolling-icons .icon {
+    width: 72px;
   }
 
   .design-stack {

@@ -32,3 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
       element.style.transform = 'translateY(0)';
     });
   });
+
+
+
+
+  // Scrolling icons
+  const scrollContent = document.querySelector('.scroll-content');
+
+// Clone the content to create the infinite effect
+scrollContent.innerHTML += scrollContent.innerHTML + scrollContent.innerHTML;
