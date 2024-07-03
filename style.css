@@ -1488,11 +1488,10 @@ main {
 
 /*--------------- Design Stack ---------------*/  
 
-
-
 .scrolling-icons {
-  width: 100%; /* Set the width of the container based on your layout */
+  width: 20px; /* Set the width of the container based on your layout */
   overflow: hidden; /* Hide the content that overflows horizontally */
+  border: var(--button-black-bg-loading) 1px solid;
 }
 
 .scrolling-icons .icon {
@@ -1503,6 +1502,15 @@ main {
   height: 64px;
 }
 
+.scrolling-icons .icon img {
+  width: 72px;
+}
+
+.scroll-content {
+  white-space: nowrap; /* Prevent wrapping of content */
+  animation: scroll 120s linear infinite; /* Adjust timing and duration based on your needs */
+}
+/* 
 @keyframes scroll {
   0% {
     transform: translateX(0);}
@@ -1511,18 +1519,7 @@ main {
     transform: translateX(-100%);
   }  
 }
-
-.scrolling-icons .icon img {
-  width: 72px;
-}
-
-.scroll-content {
-  white-space: nowrap; /* Prevent wrapping of content */
-  display: inline-block; /* Ensure elements appear in a line */
-  animation: scroll 120s linear infinite; /* Adjust timing and duration based on your needs */
-}
-
-
+*/
 /*--------------- Design Stack Responsive ---------------*/  
 @media (max-width: 1024px) {
   .scrolling-icons {
