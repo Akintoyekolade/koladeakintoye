@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initially check scroll position to display elements on page load
     checkScroll();
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select top elements
+    const topElements = document.querySelectorAll('.hero-section');
+    
+    // Trigger the fade-in effect
+    topElements.forEach(function(element) {
+      element.style.opacity = 1;
+      element.style.transform = 'translateY(0)';
+    });
+  });
