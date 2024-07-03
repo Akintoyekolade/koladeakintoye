@@ -1473,8 +1473,6 @@ main {
 
 }
 
-
-
 @media (max-width: 550px) {
   .cards-container {
     grid-template-columns: auto ;
@@ -1488,11 +1486,12 @@ main {
   }
 }
 
+
+
 /*--------------- Design Stack ---------------*/  
 
 .design-stack{
   width: 100%;
-  border: var(--button-black-bg-loading) 1px solid;
   overflow-x: hidden;
 }
 
@@ -1535,10 +1534,6 @@ main {
 
   .scrolling-icons .icon {
     width: 72px;
-  }
-
-  .design-stack {
-   max-width: 100vw;
   }
 }
 
