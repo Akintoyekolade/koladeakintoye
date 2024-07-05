@@ -596,7 +596,7 @@ body[data-theme='light'] {
 }
 
 
-/* --- LIGHT THEME ^---*/
+/* --- LIGHT THEME END! ^---*/
 /*----------------------------------------------------*/
 
 #content {
@@ -1432,7 +1432,8 @@ main {
     margin-top: 48px;
     padding: 32px 0 16px 0;
     width: 100%; 
-    overflow-x: hidden;
+    overflow: hidden;
+
   }
 
   .latest-works-heading {
@@ -1592,34 +1593,48 @@ main {
 
 
 /*--------------- Design Spectrum ---------------*/  
-.design-spectrum {
-  padding: 80px 16px;
+.service-spectrum {
+  padding: 80px 32px;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
 }
 
-.button-link-icon svg {
-  width: 64px;
+.spectrum-icon svg {
+  width: 44px;
+  fill: var(--button-black-bg-default);
+  transition: transform 0.5s ease-in-out, fill 0.3s ease-in;
+}
+
+.spectrum-icon svg:hover {
+  fill: var(--black-40-outline);
+  transform: scale(1.1);
+  cursor: not-allowed;
+}
+
+.service-spectrum .section-heading {
+  margin-bottom: 72px;
 }
 
 .services-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+  width: 100%;
+  z-index: 1;
 }
 
 .service-card {
   display: flex;
   align-items: center;
-  background: #0C0C0C;
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  background: var(--background-color);
+  border: 1px solid var(--white-20);
   border-radius: 16px;
   padding: 48px 64px;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
+
 .service-number {
   font-size: 32px;
   line-height: 36px;
@@ -1627,28 +1642,88 @@ main {
   color:var(--text-grey-idle);
 }
 
-
 .service-number-detail {
   display: flex;
   align-items: flex-start;
-  gap: 56px;
+  gap: 48px;
+}
+
+.service-detail .serviceHeading  {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.service-detail p {
+  color: var(--white-70);
 }
 
 
 @media (max-width: 1024px) {
-  .design-spectrum {
+  .service-spectrum {
     padding: 32px 16px;
-    display: grid;
+    display: flex;
     justify-content: center;
   }
 
   .services-cards {
     grid-template-columns: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-spectrum .section-heading {
+    margin-bottom: 32px;
+    width: 100%;
+    text-align: center;
+  }  
+
+  .service-card {
+    padding: 32px 32px;
+  }
+
+  .service-number-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .service-detail .serviceHeading  {
+    font-weight: bold;
+    margin-bottom: 2px;
   }
 
   .service-number {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: auto;
   }
+
+  .service-card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .service-number-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .spectrum-icon svg {
+    width: 36px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 500px) {
+  .services-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+  }
+
 }
 
 
