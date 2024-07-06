@@ -1,0 +1,159 @@
+<header class="mainHeader" id="mainHeader">
+    <!-- ***** Header Template ***** 
+        <div id="cardContainer"></div>
+    -->
+    <div class="main-nav-container">
+        <nav class="main-nav">
+            <div class="logo--menu">
+                <div class="logo-image">
+                    <a href="/" class="logo" title="Kolade Akintoye">
+                        <img src="assets/Logo_Dark.png" alt="Kolade Akintoye" id="logoImage">
+                    </a> 
+                </div>
+
+                <ul class="menu">
+                     <li class="menu-item menu-1">
+                        <button id="search-toggle" class="search-button header-button">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <path d="M28.1758 28.5L20.1758 20.5M4.17578 13.8333C4.17578 15.059 4.4172 16.2727 4.88624 17.405C5.35528 18.5374 6.04277 19.5663 6.90945 20.433C7.77613 21.2997 8.80503 21.9872 9.9374 22.4562C11.0698 22.9253 12.2834 23.1667 13.5091 23.1667C14.7348 23.1667 15.9485 22.9253 17.0808 22.4562C18.2132 21.9872 19.2421 21.2997 20.1088 20.433C20.9755 19.5663 21.6629 18.5374 22.132 17.405C22.601 16.2727 22.8424 15.059 22.8424 13.8333C22.8424 12.6077 22.601 11.394 22.132 10.2616C21.6629 9.12925 20.9755 8.10035 20.1088 7.23367C19.2421 6.36699 18.2132 5.6795 17.0808 5.21046C15.9485 4.74141 14.7348 4.5 13.5091 4.5C12.2834 4.5 11.0698 4.74141 9.9374 5.21046C8.80503 5.6795 7.77613 6.36699 6.90945 7.23367C6.04277 8.10035 5.35528 9.12925 4.88624 10.2616C4.4172 11.394 4.17578 12.6077 4.17578 13.8333Z" 
+                                stroke="var(--icon-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </button>
+                    </li>                           
+
+                    <li class="menu-item menu-2">
+                        <select title="Select Language" name="language" id="languagedropdown" name="language-select" class="header-button">
+                            <option value="en">En</option>
+                            <option value="fr">Fr</option>
+                            <option value="es">Sp</option> 
+                        </select>
+                    </li>
+                    
+
+                    <li class="menu-item menu-3">
+                        <button id="theme-toggle" class="theme-button header-button">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.17578 16.5H5.50911M16.1758 4.5V5.83333M26.8424 16.5H28.1758M16.1758 27.1667V28.5M7.64245 7.96667L8.57578 8.9M24.7091 7.96667L23.7758 8.9M23.7758 24.1L24.7091 25.0333M8.57578 24.1L7.64245 25.0333M10.8424 16.5C10.8424 17.9145 11.4044 19.271 12.4045 20.2712C13.4047 21.2714 14.7613 21.8333 16.1758 21.8333C17.5903 21.8333 18.9468 21.2714 19.947 20.2712C20.9472 19.271 21.5091 17.9145 21.5091 16.5C21.5091 15.0855 20.9472 13.729 19.947 12.7288C18.9468 11.7286 17.5903 11.1667 16.1758 11.1667C14.7613 11.1667 13.4047 11.7286 12.4045 12.7288C11.4044 13.729 10.8424 15.0855 10.8424 16.5Z" 
+                                stroke="var(--icon-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </button>
+                    </li>
+
+                    <li class="menu-item menu-4 mobile-menu">
+                        <button id="menu-toggle" class="mobile-menu-button header-button closed" onclick="toggleMenu()">
+                            <span class="bar"></span>                                        
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                    </li>
+                    
+                    
+                </ul>  
+                <!------- Mobile Menu ------>                        
+                        <nav id="mobile-nav-menu" class="mobile-menu-hidden">
+                            <ul>
+                                <li><a href="/" class="active">
+                                    <div class="circle"></div>
+                                    <div>
+                                        Home
+                                        <div class="active-rectangle"></div>
+                                    </div> 
+                                    </a>                            
+                                </li>
+    
+                                <li><a href="#about"><div>
+                                    Portfolio
+                                    <div class="hover-rectangle"></div>
+                                </div> 
+                                </a></li>
+                                <li><a href="#about"><div>
+                                    About
+                                    <div class="hover-rectangle"></div>
+                                </div> 
+                                </a></li>
+                                <li><a href="#about"><div>
+                                    Contact
+                                    <div class="hover-rectangle"></div>
+                                </div> 
+                                </a></li>
+                                <li class="nav--icon"><a href="#about"><div>
+                                    My Resume
+                                    <div class="hover-rectangle"></div>
+                                </div>
+                                <span class="link-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9367 6.5H6.93671C6.40627 6.5 5.89757 6.71071 5.52249 7.08579C5.14742 7.46086 4.93671 7.96957 4.93671 8.5V18.5C4.93671 19.0304 5.14742 19.5391 5.52249 19.9142C5.89757 20.2893 6.40627 20.5 6.93671 20.5H16.9367C17.4671 20.5 17.9758 20.2893 18.3509 19.9142C18.726 19.5391 18.9367 19.0304 18.9367 18.5V12.5M11.9367 13.5L20.9367 4.5M20.9367 4.5H15.9367M20.9367 4.5V9.5" 
+                                            stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                          
+                                    </span>
+                                    </a>
+                                </li> 
+                            </ul>
+                        
+                        
+                            
+                        <div class="social-icons">
+                            <div class="social-icon icon-1">
+                                <a href="mailto:akintoyekolade0@gmail.com" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aside-icon">
+                                        <path d="M3 7C3 6.46957 3.21071 5.96086 3.58579 5.58579C3.96086 5.21071 4.46957 5 5 5H19C19.5304 5 20.0391 5.21071 20.4142 5.58579C20.7893 5.96086 21 6.46957 21 7V17C21 17.5304 20.7893 18.0391 20.4142 18.4142C20.0391 18.7893 19.5304 19 19 19H5C4.46957 19 3.96086 18.7893 3.58579 18.4142C3.21071 18.0391 3 17.5304 3 17V7Z" 
+                                        stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 7L12 13L21 7" stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+    
+                            <div class="social-icon icon-2">
+                                <a href="https://github.com/Akintoyekolade/" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aside-icon">
+                                        <path d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.50001C19.9988 8.30498 19.5325 7.15732 18.7 6.30001C19.0905 5.26198 19.0545 4.11164 18.6 3.10001C18.6 3.10001 17.5 2.80001 15.1 4.40001C13.0672 3.8706 10.9328 3.8706 8.9 4.40001C6.5 2.80001 5.4 3.10001 5.4 3.10001C4.94548 4.11164 4.90953 5.26198 5.3 6.30001C4.46745 7.15732 4.00122 8.30498 4 9.50001C4 14.1 6.7 15.2 9.5 15.5C8.9 16.1 8.9 16.7 9 17.5V21" 
+                                        stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                       
+                                </a>
+                            </div>
+    
+                            <div class="social-icon icon-3">
+                                <a href="https://www.behance.net/akintoyekolade" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aside-icon">
+                                        <path d="M7.5 12C8.29565 12 9.05871 11.6839 9.62132 11.1213C10.1839 10.5587 10.5 9.79565 10.5 9C10.5 8.20435 10.1839 7.44129 9.62132 6.87868C9.05871 6.31607 8.29565 6 7.5 6H3V18H7.5C8.29565 18 9.05871 17.6839 9.62132 17.1213C10.1839 16.5587 10.5 15.7956 10.5 15C10.5 14.2044 10.1839 13.4413 9.62132 12.8787C9.05871 12.3161 8.29565 12 7.5 12ZM7.5 12H3M14 13H21C21 12.0717 20.6313 11.1815 19.9749 10.5251C19.3185 9.86875 18.4283 9.5 17.5 9.5C16.5717 9.5 15.6815 9.86875 15.0251 10.5251C14.3687 11.1815 14 12.0717 14 13ZM14 13V15C14.1031 15.7487 14.4459 16.4438 14.9769 16.9816C15.5079 17.5193 16.1987 17.8707 16.946 17.9833C17.6933 18.0958 18.457 17.9634 19.1228 17.606C19.7887 17.2485 20.3209 16.6851 20.64 16M16 6H19" 
+                                        stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                                                          
+                                </a>
+                            </div>
+    
+                            <div class="social-icon icon-4">
+                                <a href="https://twitter.com/akintoyekolade" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aside-icon">
+                                        <path d="M4 20L10.768 13.232M13.228 10.772L20 4M4 4L15.733 20H20L8.267 4H4Z" 
+                                        stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                                                          
+                                </a>
+                            </div>
+    
+                            <div class="social-icon icon-5">
+                                <a href="https://www.linkedin.com/in/akintoyekolade" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aside-icon">
+                                        <path d="M8 11V16M8 8V8.01M12 16V11M4 6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V6Z" stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 16V13C16 12.4696 15.7893 11.9609 15.4142 11.5858C15.0391 11.2107 14.5304 11 14 11C13.4696 11 12.9609 11.2107 12.5858 11.5858C12.2107 11.9609 12 12.4696 12 13" 
+                                        stroke="#7C7F82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                                                                                                                                     
+                                </a>
+                            </div>
+                        </div> <!--Social icons END -->
+    
+                            <div class="nav-clock">
+                                <div id="clock"></div>
+                            </div>
+
+                            <button onclick="closeMenu()" class="hide-button">Close</button>
+                        </nav>                      
+                    
+                    
+                <!------- Mobile Menu ------>
+                
+            </div>                    
+        </nav>
+    </div>            
+</header>
